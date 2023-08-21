@@ -1,0 +1,733 @@
+Chromosome,Start,End,Tumour Types(Somatic),Tissue Type,Gene Symbol,Tier
+10,52566322,52645435,melanoma,E,A1CF,2
+10,27035522,27149864,AML,L,ABI1,1
+9,133589333,133761070,"CML, ALL, T-ALL",L,ABL1,1
+1,179068462,179198736,AML,L,ABL2,1
+2,237478284,237491001,lipoma,M,ACKR3,1
+2,223725652,223809357,prostate,E,ACSL3,1
+5,131285666,131347355,"AML, AEL",L,ACSL6,2
+2,158592958,158731623,DIPG,O,ACVR1,1
+12,52345485,52388001,pancreatic cancer,E,ACVR1B,1
+2,148602086,148688393,"large intestine carcinoma, stomach carcinoma, pancreatic carcinoma, biliary tract, oesophagus",E,ACVR2A,1
+6,168227671,168364976,AL,L,AFDN,1
+4,87856154,88062206,AL,L,AFF1,1
+2,100163718,100722045,"ALL, T-ALL",L,AFF3,1
+5,132211071,132299326,ALL,L,AFF4,1
+7,91570181,91739987,papillary thyroid,E,AKAP9,2
+14,105235686,105260461,"breast, colorectal, ovarian, NSCLC",E,AKT1,1
+19,40736224,40791302,"ovarian, pancreatic",E,AKT2,1
+1,243665065,244013430,GBM,O,AKT3,2
+12,112204726,112247782,leiomyoma,M,ALDH2,2
+2,29415640,30144432,"ALCL, NSCLC, neuroblastoma, inflammatory myofibroblastic tumour, Spitzoid tumour","L, E, M",ALK,1
+X,63404997,63425624,Wilms tumour,O,AMER1,1
+8,41512843,41754280,CCRCC,E,ANK1,2
+5,112043218,112181936,"colorectal, pancreatic, desmoid, hepatoblastoma, glioma, other CNS","E, M, O",APC,1
+22,39378414,39388789,,E,APOBEC3B,1
+X,66764465,66950461,prostate,E,AR,1
+X,47420516,47431299,"cholangiocarcinoma, lung adenocarcinoma, Langerhans cell histiocytosis","E, L",ARAF,2
+5,142149949,142606050,"AML, MDS",L,ARHGAP26,1
+19,47421933,47508334,endometrial carcinoma,E,ARHGAP35,1
+14,32546495,32628934,"colon cancer, glioma","E, O",ARHGAP5,2
+8,1772142,1906799,colon cancer,E,ARHGEF10,2
+1,17866330,18024364,lymphoma,L,ARHGEF10L,2
+11,120207787,120360645,AML,L,ARHGEF12,1
+1,27022524,27108595,"clear cell ovarian carcinoma, RCC, breast",E,ARID1A,1
+6,157099063,157531913,"breast, hepatocellular carcinoma, clear cell ovarian carcinoma",E,ARID1B,1
+12,46123448,46301823,hepatocellular carcinoma,E,ARID2,1
+1,150782181,150849244,AML,L,ARNT,1
+1,197053258,197115824,"breast cancer, lung cancer, endometrial cancer, melanoma","E, O",ASPM,2
+17,79935426,79975280,alveolar soft part sarcoma,M,ASPSCR1,1
+20,30946155,31027122,"MDS, CMML",L,ASXL1,1
+2,25956622,26101385,"melanoma, CCRCC, AML","E, L",ASXL2,2
+12,51158075,51214905,"malignant melanoma of soft parts, angiomatoid fibrous histiocytoma","E, M",ATF1,1
+2,216176540,216214486,ALCL,L,ATIC,1
+11,108093559,108239826,T-PLL,"L, O",ATM,1
+1,116916489,116947394,adrenal aldosterone producing adenoma,E,ATP1A1,1
+X,152801580,152848387,adrenal aldosterone producing adenoma,E,ATP2B3,1
+3,142168079,142297668,"endometrial, gastric, epithelial ovarian, myeloma","E, L",ATR,1
+X,76760356,77041702,"pancreatic neuroendocrine tumours, paediatric GBM",E,ATRX,1
+16,337440,402659,"colorectal, endometrial, prostate, hepatocellular carcinoma, hepatoblastoma, sporadic medulloblastoma","E, O",AXIN1,1
+17,63524681,63557765,"colorectal carcinoma, stomach carcinoma, hepatocellular carcinoma",E,AXIN2,1
+15,45003675,45011075,"DLBCL, melanoma, colorectal adenocarcinoma","E, L",B2M,1
+3,52435029,52444366,"uveal melanoma, breast, NSCLC, RCC",E,BAP1,1
+2,215590370,215674428,breast cancer,E,BARD1,1
+19,49458186,49465055,colorectal cancer,E,BAX,1
+14,35221943,35344853,"uterine carcinosarcoma, colon cancer",E,BAZ1A,2
+1,85731931,85742773,MALT,L,BCL10,1
+2,60684333,60780633,B-CLL,L,BCL11A,1
+14,99635624,99737565,T-ALL,L,BCL11B,1
+18,60790579,60987361,"NHL, CLL",L,BCL2,1
+19,50168823,50177173,"melanoma, SCC",E,BCL2L12,2
+19,45251804,45263301,CLL,L,BCL3,1
+3,187439165,187463515,"NHL, CLL",L,BCL6,1
+12,122457328,122499948,BNHL,L,BCL7A,1
+1,147013182,147098017,B-ALL,L,BCL9,1
+11,118764584,118781613,"colorectal cancer, endometrial carcinoma, gastric cancer",E,BCL9L,1
+6,136578001,136610989,"melanoma, SCC",E,BCLAF1,2
+X,39910501,39956656,"retinoblastoma, AML, APL (translocation)","L, M",BCOR,1
+X,129139164,129192058,"AML, HNSCC","E, L",BCORL1,1
+22,23522397,23660224,"CML, ALL, AML",L,BCR,1
+11,102188226,102208465,"CLL, MALT, MCL, MM",L,BIRC3,1
+2,32582096,32843966,"melanoma, gastric adenocarcinoma, lung adenocarcinoma",E,BIRC6,2
+15,91260558,91358692,,"L, E",BLM,1
+6,55618443,55740362,melanoma,E,BMP5,2
+10,88516407,88692595,,E,BMPR1A,1
+7,140434279,140624564,"melanoma, colorectal, papillary thyroid, borderline ovarian, NSCLC, cholangiocarcinoma, pilocytic astrocytoma, Spitzoid tumour, pancreas acinar carcinoma, melanocytic nevus, prostate, gastric","E, O",BRAF,1
+17,41197646,41277500,ovarian,E,BRCA1,1
+13,32889617,32973805,"breast, ovarian, pancreatic","L, E",BRCA2,1
+9,136895427,136933139,lethal midline carcinoma of young people,E,BRD3,1
+19,15347647,15391262,lethal midline carcinoma of young people,E,BRD4,1
+17,59758627,59940882,,"L, E",BRIP1,1
+12,92536286,92539673,B-CLL,L,BTG1,1
+1,203274664,203278730,DLBCL,L,BTG2,2
+X,100604438,100641183,"CLL, mantle cell lymphoma, WM",L,BTK,1
+15,40453227,40513337,,M,BUB1B,1
+15,55700746,55710910,"PMBL, Hodgkin lymphoma",L,C15orf65,2
+3,53529076,53847760,adrenal aldosterone producing adenoma,E,CACNA1D,1
+19,13049421,13055303,"MPN, MDS",L,CALR,1
+1,6845384,7829766,epithelioid haemangioendothelioma,M,CAMTA1,1
+17,76987799,77005899,prostate,E,CANT1,1
+7,2945775,3083579,DLBCL,L,CARD11,1
+11,3022152,3078667,ALCL,L,CARS,1
+4,185548850,185570629,ovarian cancer,E,CASP3,2
+2,202122759,202152434,"hepatocellular, oral squamous cell, breast",E,CASP8,1
+1,15818765,15850790,glioma,O,CASP9,2
+16,88941266,89043612,AML,L,CBFA2T3,1
+16,67063148,67134925,AML,L,CBFB,1
+11,119076752,119178859,"AML, JMML, MDS",L,CBL,1
+3,105374305,105587887,AML,L,CBLB,1
+19,45281126,45303891,AML,L,CBLC,1
+10,61548521,61666414,"papillary thyroid, CML, NSCLC",E,CCDC6,1
+14,20779529,20797539,leiomyoma,M,CCNB1IP1,1
+6,99990256,100016849,T-ALL,L,CCNC,2
+11,69455855,69469242,"CLL, B-ALL, breast","L, E",CCND1,1
+12,4382938,4414516,"NHL,CLL",L,CCND2,1
+6,41902671,41909586,MM,L,CCND3,1
+19,30302805,30315215,serous ovarian,E,CCNE1,1
+3,32993066,32997841,adult T-cell leukaemia/lymphoma,L,CCR4,2
+17,38710021,38721724,adult T-cell leukaemia/lymphoma,L,CCR7,2
+19,7804883,7812420,prostate carcinoma,E,CD209,2
+9,5450525,5470547,"PMBL, Hodgkin lymphoma",L,CD274,1
+2,204571271,204603635,T-cell lymphoma,L,CD28,2
+5,149781715,149792314,NSCLC,E,CD74,1
+19,42381190,42385439,"DLBCL, WM",L,CD79A,1
+17,62006100,62009696,"DLBCL, WM",L,CD79B,1
+1,193091147,193223031,parathyroid adenoma,"E, M",CDC73,1
+16,68771128,68869451,"lobular breast, gastric",E,CDH1,1
+5,24487209,24645087,melanoma,E,CDH10,2
+16,64977656,65156101,aneurysmal bone cyst,M,CDH11,1
+8,95139399,95220815,melanoma,E,CDH17,2
+17,37618292,37691399,serous ovarian,E,CDK12,1
+12,58141510,58146304,,E,CDK4,1
+7,92234235,92463231,ALL,L,CDK6,1
+6,36646487,36655108,bladder cancer,E,CDKN1A,2
+12,12870058,12875305,"breast, small intestine neuroendocrine tumours",E,CDKN1B,1
+9,21968055,21974865,"melanoma, multiple other tumour types","L, E, M, O",CDKN2A,1
+1,51426417,51440305,"glioma, MM","O, L",CDKN2C,1
+13,28536274,28545276,AML,L,CDX2,1
+19,33790840,33793470,"AML, MDS",L,CEBPA,1
+19,33369902,33462869,Spitzoid tumour,E,CEP89,2
+8,57124315,57131174,salivary adenoma,E,CHCHD7,1
+15,93443058,93571237,"melanoma, large intestine, CLL, monoclonal B lymphocytosis","E, L",CHD2,2
+12,6679249,6716551,uterine serous carcinoma,E,CHD4,1
+22,29083751,29137826,,E,CHEK2,1
+4,54875956,54930857,AML,L,CHIC2,2
+12,104850751,105155792,B-CLL,L,CHST11,2
+19,42788817,42799949,"oligodendroglioma, soft tissue sarcoma","O, M",CIC,1
+16,10971055,11023624,"PMBL, Hodgkin lymphoma",L,CIITA,1
+12,122757381,122865041,Spitzoid tumour,E,CLIP1,1
+11,57424630,57429340,AML,L,CLP1,2
+17,57697219,57773671,"ALCL, renal",L,CLTC,1
+22,19166986,19279237,ALCL,L,CLTCL1,1
+8,87878673,88395087,"gastric cancer, colon cancer",E,CNBD1,2
+3,128888945,128902753,aneurysmal bone cyst,M,CNBP,1
+19,54645112,54659418,T-ALL,L,CNOT3,1
+7,145813453,148118090,"glioma, melanoma","E, O",CNTNAP2,2
+9,123837290,123939886,"MPN, NHL",L,CNTRL,1
+17,48260650,48278993,"DFSP, aneurysmal bone cyst",M,COL1A1,1
+12,48366748,48398269,"chondrosarcoma, enchondroma","L, E, M",COL2A1,1
+2,189839046,189877472,lipoblastoma,E,COL3A1,2
+8,100890094,100906290,uterine leiomyoma,M,COX6C,2
+10,93809388,94050844,lung cancer,E,CPEB3,2
+2,208394616,208468155,"clear cell sarcoma, angiomatoid fibrous histiocytoma",M,CREB1,1
+11,46299212,46342972,myxofibrosarcoma,M,CREB3L1,1
+7,137559725,137686803,fibromyxoid sarcoma,M,CREB3L2,1
+16,3775055,3930727,"ALL, AML, DLBCL, B-NHL",L,CREBBP,1
+X,1314890,1331527,"B-ALL, Downs associated ALL",L,CRLF2,1
+20,20015012,20036690,base cell carcinoma,E,CRNKL1,2
+19,18794488,18893004,salivary gland mucoepidermoid,E,CRTC1,1
+15,91073300,91186045,salivary gland mucoepidermoid,E,CRTC3,1
+5,149432854,149492935,"MDS, CML, AML, hemangioblastoma, CCRCC","L, M, E",CSF1R,2
+1,36931644,36948879,"aCML, CNL,  leukaemia lymphoma and MDS associated with severe congenital neutropenia, CMML, de novo AML, MDS",L,CSF3R,1
+8,113235157,114449328,"ovarian cancer, oral SCC, lung cancer",E,CSMD3,2
+16,67596310,67673086,"endometrial, breast, head and neck cancer",E,CTCF,1
+5,138089112,138270723,"AML, MDS, cutaneous melanoma","E, L",CTNNA1,2
+2,79412357,80875904,gastric cancer,E,CTNNA2,2
+3,41240930,41281936,"colorectal, ovarian,  hepatoblastoma, pleomorphic salivary gland adenoma, other tumour types","E, M, O",CTNNB1,1
+11,57529269,57586650,large intestine carcinoma,E,CTNND1,2
+5,10971952,11904155,"prostae adenocarcinoma, GIST",E,CTNND2,2
+2,225334867,225450065,lung cancer,E,CUL3,2
+7,101459291,101901513,"endometrial, melanoma, colorectal, AML, MDS, other tumour types","E,L,M,O",CUX1,1
+2,136871919,136873813,WM,L,CXCR4,1
+16,50776671,50835846,cylindroma,E,CYLD,1
+10,96796530,96829254,melanoma,E,CYP2C8,2
+13,49280951,49283498,uveal melanoma,E,CYSLTR2,2
+6,33286335,33290791,"pancreatic neuroendocrine tumour, paediatric glioblastoma",E,DAXX,1
+X,125298337,125300080,CRC,E,DCAF12L2,2
+18,49866542,51057784,"CRC, melanoma, SCC",E,DCC,2
+2,74588281,74607482,"inflammatory myofibroblastic tumour, Spitzoid tumour",M,DCTN1,1
+11,47236493,47260767,,E,DDB2,1
+12,57910372,57914300,liposarcoma,M,DDIT3,1
+1,162602255,162757190,"squamous cell carcinoma, NSCLC",E,DDR2,1
+11,108535752,108811657,AML*,L,DDX10,1
+X,41192651,41209462,"CLL, medulloblastoma","L, O",DDX3X,1
+17,62495734,62502639,prostate,E,DDX5,1
+11,118620034,118661845,B-NHL,L,DDX6,1
+6,18224099,18265054,AML,L,DEK,1
+22,20067755,20099394,Wilms tumour,O,DGCR8,2
+14,95552565,95624347,"sex cord-stromal tumour, TGCT, embryonal rhabdomyosarcoma, pleuropulmonary blastoma, pituitary blastoma, Wilms tumour, thyroid cancer, other tumour types","E, M, O",DICER1,1
+19,14625582,14629232,fibrolamellar hepatocellular carcinoma,E,DNAJB1,1
+19,10828807,10942579,T-ALL,L,DNM2,1
+2,25455845,25565459,AML,L,DNMT3A,1
+5,31400604,31532168,"Wilms tumour, NSCLC, bladder carcinoma","E, O",DROSHA,1
+4,191005267,191006883,soft tissue sarcoma,M,DUX4L1,2
+5,158122928,158526769,lipoma,M,EBF1,1
+6,139117063,139225207,ETP ALL,L,ECT2L,2
+11,85955586,85989778,"malignant peripheral nerve sheath tumours, MDS and related, lung adenocarcinoma","E, L",EED,2
+7,55086794,55279321,"glioma, NSCLC","E, O",EGFR,1
+X,20142636,20159962,"uveal melanoma, thyroid cancer (PDTC and ATC), low grade serous ovarian cancer",E,EIF1AX,2
+8,109213972,109260994,colorectal,E,EIF3E,1
+3,186501336,186507689,NHL,L,EIF4A2,1
+1,201977073,201985137,pancreatic cancer,E,ELF3,2
+X,129198903,129244470,AML,L,ELF4,1
+1,205577071,205601090,prostate,E,ELK4,1
+19,18553473,18632937,AL,L,ELL,1
+7,73442119,73484237,B-ALL,L,ELN,2
+2,42396490,42559688,NSCLC,E,EML4,1
+22,41487790,41576081,"colorectal, breast, pancreatic, AML, ALL, DLBCL","L, E",EP300,1
+2,46524541,46613836,"paraganglioma, pheochromocytoma, central nervous system hemangioblastomas","E, M",EPAS1,1
+3,89156674,89531284,"lung cancer, CRC, melanoma",E,EPHA3,2
+6,93949738,94129244,"CRC, melanoma",E,EPHA7,2
+1,51819935,51985000,ALL,L,EPS15,1
+17,37856333,37884915,"breast, ovarian, other tumour types, NSCLC, gastric",E,ERBB2,1
+12,56473645,56497289,"colon, gastric, head and neck, bladder, skin",E,ERBB3,1
+2,212240446,213403565,"melanoma, gastric, NSCLC",E,ERBB4,1
+12,1100404,1605090,"papillary thyroid, Spitzoid tumour",E,ERC1,1
+19,45853095,45873876,,E,ERCC2,1
+2,128014866,128051752,,E,ERCC3,1
+16,14014014,14046202,,E,ERCC4,1
+13,103497194,103528345,,E,ERCC5,1
+21,39751949,40033618,"Ewing sarcoma, prostate, AML","M, E, L",ERG,1
+6,152011631,152424409,breast,E,ESR1,1
+12,22778009,22843599,"aCML, CMML, SM-AHD, HES",L,ETNK1,1
+7,13930853,14029571,"Ewing sarcoma, prostate","M, E",ETV1,1
+17,41605212,41623800,"Ewing sarcoma, prostate carcinoma","M, E",ETV4,1
+3,185764097,185826901,prostate,E,ETV5,1
+12,11802788,12048336,"congenital fibrosarcoma, multiple different leukaemia and lymphoma tumour types including ALL, secretory breast, MDS","L, E, M",ETV6,1
+22,29664305,29696333,"Ewing sarcoma, desmoplastic small round cell tumour , ALL, clear cell sarcoma, sarcoma, myoepithelioma, mesothelioma","L, M, E",EWSR1,1
+8,118806729,119124092,,M,EXT1,1
+11,44117747,44266979,,M,EXT2,1
+7,148504477,148581370,DLBCL,L,EZH2,1
+6,159186780,159240444,NSCLC,E,EZR,1
+11,70049269,70053496,"breast cancer, HNSCC","E, L",FADD,2
+7,143050493,143059845,pilocytic astrocytoma,O,FAM131B,2
+8,139142266,139509065,SCLC,E,FAM135B,2
+X,37026432,37029739,"melanoma, clear cell sarcoma of soft parts, SCLC","E, M",FAM47C,2
+16,89803957,89883054,,L,FANCA,1
+9,97861336,98079984,,L,FANCC,1
+3,10068098,10141344,,L,FANCD2,1
+6,35420138,35434880,,L,FANCE,1
+11,22644079,22647387,,L,FANCF,1
+9,35073835,35080013,,L,FANCG,1
+10,90750414,90775542,"TGCT, nasal NK/T lymphoma, skin squamous cell carcinoma-burn scar related","L, E, O",FAS,1
+4,187508937,187645009,"oral squamous cell, chemorefractory CLL, head and neck, pancreatic acinar cell carcinoma","E, L",FAT1,1
+11,92085262,92629618,"SCC, colon adenocarcinoma, gastric adenocarcinoma",E,FAT3,2
+4,126237554,126414087,"lymphoma, pancreatic, head and neck, melanoma, hepatocellular carcinoma","E, L",FAT4,1
+3,13590631,13679922,"breast cancer, colorectal adenocarcinoma",E,FBLN2,2
+2,48034059,48132932,DLBCL,L,FBXO11,1
+4,153242410,153457253,"colorectal, endometrial, T-ALL","E, L",FBXW7,1
+1,161632951,161648444,ALL,L,FCGR2B,1
+1,157543539,157567870,B-NHL,L,FCRL4,1
+11,61560109,61564716,,E,FEN1,2
+15,91427642,91439006,"HNSCC, ovarian carcinoma",E,FES,1
+2,219845809,219850379,Ewing sarcoma,M,FEV,1
+8,38268656,38325363,"MPN, NHL, salivary adenoma",L,FGFR1,1
+6,167412670,167466201,"MPN, NHL",L,FGFR1OP,1
+10,123239371,123357917,"gastric, NSCLC, endometrial",E,FGFR2,1
+4,1795039,1810599,"bladder, MM, T-cell lymphoma","L, E",FGFR3,1
+5,176513887,176525145,rhabdomyosarcoma,M,FGFR4,1
+1,241660903,241683061,,"E, M",FH,1
+3,59737133,61237133,pleomorphic salivary gland adenoma,E,FHIT,1
+4,54243812,54325835,idiopathic hypereosinophilic syndrome,L,FIP1L1,1
+7,32997017,33046543,glioma,O,FKBP9,2
+17,17115526,17140453,,"E, M",FLCN,1
+11,128563665,128683162,Ewing sarcoma,M,FLI1,1
+X,153577016,153602994,phyllodes tumour of the breast,E,FLNA,2
+13,28577411,28674729,"AML, ALL",L,FLT3,1
+5,180028506,180076624,soft tissue sarcoma,M,FLT4,1
+9,132649466,132805441,AML,L,FNBP1,2
+14,38059189,38064239,"breast, prostate",E,FOXA1,1
+3,138663066,138665982,granulosa-cell tumour of the ovary,O,FOXL2,1
+13,41129804,41240734,alveolar rhabdomyosarcoma,M,FOXO1,1
+6,108882069,109005971,AL,L,FOXO3,1
+X,70316047,70323385,"AL, soft tissue sarcoma","L, M",FOXO4,1
+3,71008342,71179988,ALL,L,FOXP1,1
+11,118842417,118852001,neuroblastoma,O,FOXR1,2
+19,676392,683385,B-CLL,L,FSTL3,1
+1,78414090,78444770,oligodendroglioma,O,FUBP1,1
+16,31191431,31203127,"liposarcoma, AML, Ewing sarcoma, angiomatoid fibrous histiocytoma, fibromyxoid sarcoma","M, L",FUS,1
+17,9817167,10101868,AML*,L,GAS7,1
+X,48644962,48652715,megakaryoblastic leukaemia of Downs syndrome,L,GATA1,1
+3,128198270,128212028,AML (CML blast transformation),L,GATA2,1
+10,8096656,8117161,breast,E,GATA3,1
+12,57853921,57866045,"CRC, oesophagus cancer",E,GLI1,2
+3,155588325,155661815,AML,L,GMPS,2
+19,3094408,3124002,"uveal melanoma, primary central nervous system melanocytic neoplasms","E, O",GNA11,1
+9,80331003,80646374,"uveal melanoma, primary central nervous system melanocytic neoplasms","E, O",GNAQ,1
+20,57427769,57486247,"pituitary adenoma, pancreatic intraductal papillary mucinous neoplasm, fibrous dysplasia","E, M",GNAS,1
+14,93260576,93306308,"papillary thyroid, Spitzoid tumour",E,GOLGA5,1
+5,32124810,32174456,"breast cancer, NSCLC, ovarian cancer",E,GOLPH3,2
+6,117881432,117923527,"glioblastoma, cholangiocarcinoma, borderline ovarian","E, O",GOPC,1
+X,132669782,133119673,,O,GPC3,1
+13,92050929,93519490,lung adenocarcinoma,E,GPC5,2
+14,66974125,67648520,AL,L,GPHN,1
+16,9852376,10276611,"melanoma, colorectal carcinoma, gastric carcinoma, lung carcinoma",E,GRIN2A,1
+7,86273230,86494200,"melanoma, oral SCC",E,GRM3,2
+1,226251678,226259702,glioma,O,H3F3A,1
+17,73772515,73775860,chondroblastoma,M,H3F3B,1
+16,56965960,56977793,prostate,E,HERPUD1,1
+8,80676248,80680092,mesenchymal chondrosarcoma,M,HEY1,1
+14,62164340,62214489,"endometrioid carcinoma, glioblastoma, colorectal, renal, lung, pancreatic","E, O",HIF1A,1
+7,75162621,75368265,"CMML, NSCLC","L, E",HIP1,1
+6,26031817,26032288,glioma,O,HIST1H3B,1
+6,27107076,27108418,NHL,L,HIST1H4I,1
+6,29909037,29913661,Spitzoid tumour,E,HLA-A,1
+17,53342373,53402426,ALL,L,HLF,1
+6,34204650,34214007,"microfollicular thyroid adenoma, various benign mesenchymal tumours","E, M",HMGA1,1
+12,66217911,66360075,"lipoma, leiomyoma, pleomorphic salivary gland adenoma",M,HMGA2,1
+15,45803349,45848300,prostate,E,HMGN2P46,2
+12,121416346,121440315,"hepatic adenoma, hepatocellular",E,HNF1A,1
+7,26229547,26240366,prostate,E,HNRNPA2B1,1
+8,42752075,42885682,papillary thyroid,E,HOOK3,1
+7,27221134,27224835,CML,L,HOXA11,1
+7,27234637,27239725,AML,L,HOXA13,1
+7,27202054,27205149,AML*,L,HOXA9,1
+12,54366910,54371427,AML,L,HOXC11,1
+12,54332535,54340328,AML,L,HOXC13,1
+2,176972014,176974722,AML,L,HOXD11,1
+2,176957619,176960666,AML*,L,HOXD13,1
+11,532243,535550,"infrequent sarcomas, rare other tumour types","E, L, M",HRAS,1
+14,102547386,102606023,NHL,L,HSP90AA1,1
+6,44215603,44221620,NHL,L,HSP90AB1,1
+1,23884409,23886285,Burkitt lymphoma,L,ID3,2
+2,209100989,209119046,glioblastoma,O,IDH1,1
+15,90626277,90645736,glioblastoma,O,IDH2,1
+3,185361527,185542844,lymphoma,L,IGF2BP2,2
+8,42128820,42189126,SMZL,L,IKBKB,1
+7,50348318,50470264,"ALL, DLBCL",L,IKZF1,1
+17,37921198,38020441,"B-ALL, CLL, breast cancer, colorectal cancer","L, E",IKZF3,1
+4,123372625,123377880,intestinal T-cell lymphoma,L,IL2,1
+16,27413483,27461879,NHL,L,IL21R,1
+5,55230923,55290821,hepatocellular carcinoma,E,IL6ST,1
+5,35856951,35879705,"ALL, ETP ALL",L,IL7R,1
+6,391739,411447,MM,L,IRF4,1
+X,107975712,107979651,"glioma, rhabdomyosarcoma, melanoma, breast cancer, T-ALL","E, O, M, L",IRS4,1
+22,35462129,35483380,melanoma,E,ISX,2
+2,187454792,187545628,large intestine carcinoma,E,ITGAV,2
+5,156607837,156682201,peripheral T-cell lymphoma,L,ITK,1
+1,65298912,65432187,ALL,L,JAK1,1
+9,4985245,5128183,"ALL, AML, MPN,  CML",L,JAK2,1
+19,17935595,17958841,"acute megakaryocytic leukaemia, ETP ALL",L,JAK3,1
+7,27870192,28220362,endometrial stromal tumour,M,JAZF1,2
+1,59246465,59249785,sarcoma,M,JUN,1
+8,41786997,41909505,AML,L,KAT6A,1
+10,76586383,76792380,"AML, leiomyoma","L, M",KAT6B,1
+17,47865917,47906458,CCRCC,E,KAT7,2
+11,128761251,128790930,adrenal adenoma,E,KCNJ5,1
+12,389295,498620,AML,L,KDM5A,1
+X,53221334,53254604,clear cell renal carcinoma,E,KDM5C,1
+X,44732757,44971847,"renal cell carcinoma, bladder carcinoma, oesophageal SCC, MM, medulloblastoma, T-ALL, other tumour types","E, L",KDM6A,1
+4,55944644,55991756,"NSCLC, angiosarcoma",E,KDR,1
+18,60994959,61034743,B-NHL,L,KDSR,1
+19,10596796,10614417,"NSCLC, breast carcinoma",E,KEAP1,1
+7,138522270,138666064,pilocytic astrocytoma,O,KIAA1549,2
+10,32297938,32345359,"NSCLC, Spitzoid tumour",E,KIF5B,1
+4,55524085,55606881,"GIST, AML, TGCT, mastocytosis, mucosal melanoma","L, M, O, E",KIT,1
+9,110247133,110251927,meningioma,O,KLF4,1
+10,3818188,3827467,"prostate, glioma","E, O",KLF6,1
+19,51376505,51383823,prostate,E,KLK2,1
+11,118307205,118397539,"AML, ALL",L,KMT2A,1
+7,151832010,152133090,medulloblastoma,O,KMT2C,1
+12,49412758,49449107,"medulloblastoma, renal","O, E",KMT2D,1
+15,40886218,40956540,AML,L,KNL1,1
+15,40674922,40686446,SCC,E,KNSTRN,2
+12,25362365,25403737,"pancreatic, colorectal, lung, thyroid, AML, other tumour types","L, E, M, O",KRAS,1
+14,56047035,56151297,papillary thyroid,E,KTN1,1
+10,855484,931702,"CRC, glioma","E, O",LARP4B,2
+17,37026112,37078023,AML,L,LASP1,1
+6,149979289,150039392,skin basal cell carcinoma,E,LATS1,1
+13,21547171,21635686,malignant mesothelioma,E,LATS2,1
+1,32716840,32751766,T-ALL,L,LCK,1
+13,46700055,46785483,NHL,L,LCP1,2
+4,108968701,109089578,"B-ALL, T-ALL, eyelid sebaceous carcinoma, AML, lymphomas","L, E",LEF1,1
+8,29952996,29995864,"lung cancer, colon cancer",E,LEPROTL1,2
+13,39917029,40177308,lipoma,M,LHFPL6,2
+5,38475065,38595506,salivary adenoma,E,LIFR,1
+1,156084498,156109880,Spitzoid tumour,E,LMNA,1
+11,8245851,8285405,"T-ALL, neuroblastoma",L,LMO1,1
+11,33880122,33913836,T-ALL,L,LMO2,1
+3,187930721,188608460,"lipoma, leukaemia","L, M",LPP,1
+12,59265931,59314303,NSCLC,E,LRIG3,1
+2,140988992,142889270,"CLL, ovarian cancer, oesophageal squamous cell carcinoma, urothelial cancer","E, L",LRP1B,1
+19,34663471,34720420,Spitzoid tumour,E,LSM14A,2
+19,13209847,13213681,T-ALL,L,LYL1,1
+8,56792372,56923131,"DLBCL, B-ALL, MPN",L,LYN,2
+22,21336302,21353327,glioblastoma,E,LZTR1,1
+7,20174278,20257013,"liver, CRC",E,MACC1,2
+16,79627735,79634611,MM,L,MAF,1
+20,39314488,39317880,MM,L,MAFB,1
+11,65265233,65273940,"renal cell carcinoma (childhood epithelioid), lung",E,MALAT1,2
+18,56338618,56417371,MALT,L,MALT1,1
+11,95709762,96076344,salivary gland mucoepidermoid,E,MAML2,1
+15,66679155,66784650,"NSCLC, melanoma, colorectal",E,MAP2K1,1
+19,4090319,4124126,"NSCLC, melanoma",E,MAP2K2,1
+17,11924141,12047140,"pancreatic, breast, colorectal",E,MAP2K4,1
+5,56111401,56191979,luminal A breast,E,MAP3K1,1
+3,185080908,185206885,breast,E,MAP3K13,1
+22,22108789,22221919,"CLL, ovarian mixed germ cell tumour, cervical carcinoma","E, L",MAPK1,1
+14,65542262,65569188,"pheochromocytoma, endometrioid carcinoma, colon carcinoma","E, O",MAX,1
+3,192514604,192635950,lung cancer,E,MB21D2,2
+12,69201956,69239214,"sarcoma, glioma, colorectal, other tumour types","M, O, E, L",MDM2,1
+1,204485511,204527248,"glioblastoma, bladder, retinoblastoma",M,MDM4,1
+1,23953824,23967058,MDS,L,MDS2,2
+3,168801287,168864093,"AML, CML, MDS",L,MECOM,1
+X,70338573,70362297,"uterine leiomyoma, fibroadenoma, phyllodes tumour","M, E",MED12,1
+11,64570996,64578766,"parathyroid tumours, pancreatic neuroendocrine tumour",E,MEN1,1
+7,116312459,116436396,"papillary renal, head-neck squamous cell",E,MET,1
+10,131265448,131566271,glioma,O,MGMT,2
+3,69788586,70017487,melanoma,E,MITF,1
+3,158289049,158323190,AML,L,MLF1,1
+3,37034823,37092409,"colorectal, endometrial, ovarian, CNS tumours","E, O",MLH1,1
+19,6212966,6279959,AL,L,MLLT1,1
+10,21823272,22032559,AL,L,MLLT10,1
+1,151030234,151040970,ALL,L,MLLT11,1
+9,20341663,20622542,ALL,L,MLLT3,1
+17,36861795,36886056,AL,L,MLLT6,1
+22,28144265,28197486,"AML, MDS",L,MN1,1
+7,156797547,156803345,AML,L,MNX1,2
+1,43803478,43818443,MPN,L,MPL,1
+22,40806285,41032689,acute megakaryocytic leukaemia,L,MRTFA,1
+2,47630108,47710367,"colorectal, endometrial, ovarian",E,MSH2,1
+2,48010221,48037240,colorectal,E,MSH6,1
+17,55333895,55762046,CML,L,MSI2,1
+X,64887537,64961791,ALCL,L,MSN,1
+X,154292309,154299501,T cell prolymphocytic leukaemia,L,MTCP1,1
+1,11166592,11322564,"endometrial carcinoma, head and neck, clear cell renal cell carcinoma, anaplastic thyroid cancer, urothelial cell carcinoma, central nervous system tumours, testicular germ cell tumours and other tumour types",E,MTOR,1
+1,155158300,155162706,B-NHL,L,MUC1,1
+19,8959520,9092018,"HNSCC, melanoma",E,MUC16,2
+3,195473636,195539148,HNSCC,E,MUC4,2
+1,45794914,45806060,,E,MUTYH,1
+6,135502453,135540305,adenoid cystic carcinoma,E,MYB,1
+8,128748330,128753674,"Burkitt lymphoma, amplified in other cancers, B-CLL","L, E",MYC,1
+1,40361098,40367685,small cell lung carcinoma,E,MYCL,1
+2,16080686,16087129,"neuroblastoma, Wilms tumour",O,MYCN,1
+3,38179969,38184510,ABC-DLBCL,L,MYD88,1
+16,15797029,15950868,AML,L,MYH11,1
+22,36677327,36784063,ALCL,L,MYH9,1
+15,52599480,52821247,Spitzoid tumour,E,MYO5A,1
+11,17741115,17743678,embryonal rhabdomyosarcoma,M,MYOD1,1
+4,40058446,40159872,lung cancer,E,N4BP2,2
+12,57482677,57489259,"solitary fibrous tumour, meningeal haemangiopericytoma","M, O",NAB2,1
+12,57106217,57119083,NHL,L,NACA,2
+13,35516424,36246872,"large intestine carcinoma, multiple myeloma","E, L",NBEA,2
+8,90945564,90996944,,"L, E, M, O",NBN,1
+3,48711277,48723360,ALL,L,NCKIPSD,2
+2,24714801,24993571,alveolar rhabdomyosarcoma,M,NCOA1,1
+8,71021997,71316040,"AML, chondrosarcoma, rhabdomyosarcoma","L, M",NCOA2,1
+10,51565108,51590731,papillary thyroid,E,NCOA4,1
+17,15932471,16118863,breast,E,NCOR1,1
+12,124808961,124979798,prostate,E,NCOR2,1
+8,134249419,134309829,prostate,E,NDRG1,1
+17,29421945,29704695,"neurofibroma, glioma",O,NF1,1
+22,29999547,30094587,"meningioma, acoustic neuroma, renal",O,NF2,1
+20,50003494,50159258,Ewing sarcoma,M,NFATC2,1
+2,178095033,178129859,"NSCLC, HNSCC",E,NFE2L2,1
+9,14087568,14313666,"adenoid cystic carcinoma, lipoma",E,NFIB,1
+10,104154354,104162281,B-NHL,L,NFKB2,1
+6,44225903,44233500,"CLL, desmoplastic melanoma","L, E",NFKBIE,1
+14,51192558,51297839,MPN,L,NIN,1
+14,36985602,36989433,NSCLC,E,NKX2-1,1
+X,70503433,70521018,papillary renal,E,NONO,1
+9,139388896,139440314,"T-ALL, breast, bladder, skin SCC, lung SCC, head and neck SCC","L, E",NOTCH1,1
+1,120454176,120612240,"marginal zone lymphoma, DLBCL, bladder","L, E",NOTCH2,1
+5,170814652,170838141,"NHL, APL, AML",L,NPM1,1
+9,102589009,102629173,extraskeletal myxoid chondrosarcoma,M,NR4A3,1
+1,115247090,115259515,"melanoma, MM, AML, thyroid","L, E",NRAS,1
+8,32405728,32622548,NSCLC,E,NRG1,1
+5,176560926,176727216,AML,L,NSD1,1
+4,1894572,1983934,MM,L,NSD2,1
+8,38127215,38239790,AML,L,NSD3,1
+10,104845940,104953056,relapse ALL,L,NT5C2,1
+16,2089816,2097867,,E,NTHL1,2
+1,156830686,156851434,"papillary thyroid, Spitzoid tumour",E,NTRK1,1
+9,87283466,87638505,"colorectal cancer, ganglioglioma, glioma, HNSCC, lung adenocarcinoma","E, O",NTRK2,1
+15,88420022,88799661,"congenital fibrosarcoma, secretory breast","E, M",NTRK3,1
+11,71713910,71791733,APL,L,NUMA1,1
+9,134000948,134110057,"AML, T-ALL",L,NUP214,1
+11,3696240,3819022,AML,L,NUP98,1
+15,34638066,34649933,lethal midline carcinoma,E,NUTM1,1
+10,81462983,81472507,endometrial stromal sarcoma,M,NUTM2B,1
+10,89117477,89130452,endometrial stromal sarcoma,M,NUTM2D,1
+21,34398243,34401504,T-ALL,L,OLIG2,1
+9,95176527,95186743,aneurysmal bone cyst,M,OMD,2
+X,1581465,1656000,"B-ALL, Down syndrome associated ALL",L,P2RY8,1
+8,101715144,101734940,"HNSCC, biliary tract carcinoma",E,PABPC1,2
+11,117014983,117041761,MLCLS,L,PAFAH1B2,1
+16,23614491,23652631,,"L, O, E",PALB2,1
+22,31721790,31742218,Ewing sarcoma,M,PATZ1,1
+2,223064607,223163700,alveolar rhabdomyosarcoma,M,PAX3,1
+9,36833272,37034103,"NHL, ALL, B-ALL",L,PAX5,1
+1,18957500,19062632,alveolar rhabdomyosarcoma,M,PAX7,1
+2,113973574,114036527,follicular thyroid,E,PAX8,1
+3,52581857,52719852,"clear cell renal carcinoma, breast",E,PBRM1,1
+1,164528872,164821068,"pre B-ALL, myoepithelioma","L, M",PBX1,1
+2,70314585,70316332,CRC,E,PCBP1,2
+8,17780349,17885477,"papillary thyroid, CML, MPN","E, L",PCM1,1
+9,5510570,5571252,"PMBL, Hodgkin lymphoma",L,PDCD1LG2,1
+1,144851427,144995022,MPN,L,PDE4DIP,1
+22,39619364,39640756,DFSP,M,PDGFB,1
+4,55095264,55164414,"GIST, idiopathic hypereosinophilic syndrome, paediatric glioblastoma","L, M, O",PDGFRA,1
+5,149493400,149535423,"MPN, AML, CMML, CML",L,PDGFRB,1
+17,8043790,8055753,"AML, CMML",L,PER1,1
+X,133507342,133562819,ETP ALL,L,PHF6,1
+4,41746099,41750987,neuroblastoma,O,PHOX2B,1
+11,85669857,85779971,"T-ALL, AML",L,PICALM,1
+3,178866311,178957881,"colorectal, gastric, glioblastoma, breast","E, O",PIK3CA,1
+3,138372860,138553594,"SCC, NSCLC",E,PIK3CB,1
+5,67511548,67597649,"glioblastoma, ovarian, colorectal","E, O",PIK3R1,1
+6,37137979,37143202,NHL,L,PIM1,1
+8,57073463,57123838,"salivary adenoma, lipoblastoma",E,PLAG1,1
+20,39765877,39804361,angiosarcoma,E,PLCG1,1
+15,74287058,74339112,"APL, ALL",L,PML,1
+2,190649107,190742355,,E,PMS1,2
+7,6012870,6048756,,E,PMS2,1
+19,50887596,50921271,CRC,E,POLD1,1
+12,133200348,133263945,"colorectal carcinoma, endometrioid carcinoma, stomach carcinoma, skin cancer",E,POLE,1
+15,89859534,89878078,CRC,E,POLG,2
+3,121150278,121264853,oral SCC,E,POLQ,1
+17,7387685,7417933,meningioma,O,POLR2A,2
+7,124462440,124570035,CLL,L,POT1,1
+11,111222977,111250417,NHL,L,POU2AF1,1
+6,31132120,31138470,sarcoma,M,POU5F1,1
+3,12392971,12475855,follicular thyroid,E,PPARG,1
+12,27677139,27848497,"Spitzoid tumour, inflammatory myofibroblastic tumour","E, M",PPFIBP1,1
+17,58677544,58741849,"glioma, ovarian cancer, breast cancer",E,PPM1D,1
+19,52693292,52730687,clear cell ovarian carcinoma,E,PPP2R1A,1
+9,127908853,127952218,melanoma,E,PPP6C,1
+1,156737292,156770607,papillary renal,E,PRCC,1
+6,106534195,106557813,DLBCL,L,PRDM1,1
+1,2985775,3355185,"MDS, AML",L,PRDM16,1
+1,14031350,14151574,"glioma, colon adenocarcinoma, gastric carcinoma, ovarian carcinoma, HNSCC","E, O",PRDM2,2
+8,68864353,69149265,"melanoma, pancreatic ductal adenocarcinoma",E,PREX2,1
+10,72357105,72362531,,L,PRF1,1
+19,14202500,14228556,"fibrolamellar hepatocellular carcinoma, cortisol secreting adrenal adenoma",E,PRKACA,1
+17,66508568,66529572,papillary thyroid,"E, M",PRKAR1A,1
+16,23847345,24231932,adult T-cell lymphoma-leukaemia,L,PRKCB,2
+14,30045687,30396948,"cribriform adenocarcinoma of the minor salivary glands, polymorphous adenocarcinoma of the minor salivary glands",E,PRKD1,2
+12,50017219,50038448,"melanoma, colon carcinoma, MDS","E, L",PRPF40B,2
+1,170633047,170708560,AML,L,PRRX1,1
+9,15464064,15511017,AML,L,PSIP1,1
+9,98205262,98270943,"skin basal cell, medulloblastoma","E, M",PTCH1,1
+10,89622870,89731687,"glioma, prostate, endometrial","L, E, M, O",PTEN,1
+20,62159778,62168695,"renal, gastric, head and neck, ovarian, others",E,PTK6,1
+12,112856718,112947717,"JMML, AML, MDS",L,PTPN11,1
+4,87515468,87736324,"lung, NSCLC, gastric, peritoneal carcinomatosis",E,PTPN13,1
+12,7060434,7070479,DLBCL,L,PTPN6,2
+12,70910630,71031220,angiosarcoma,E,PTPRB,1
+1,198608170,198726412,T-ALL,L,PTPRC,1
+9,8314246,10033790,"lung cancer, kidney cancer, HNSCC, glioblastoma","E, O",PTPRD,2
+6,128290122,128841728,colorectal,E,PTPRK,1
+20,40701392,41818373,"HNSCC, colorectal cancer, gastric cancer, lung cancer, melanoma",E,PTPRT,1
+5,159518349,159546430,Spitzoid tumour,E,PWWP2A,2
+6,163835675,163999628,"angiocentric glioma, colorectal cancer","E, O",QKI,1
+17,5185558,5289129,CMML,L,RABEP1,1
+7,6414170,6442151,"melanoma, carcinoma",E,RAC1,1
+5,68665633,68710628,"lymphoma, colon cancer","E, L",RAD17,2
+8,117858174,117887105,"AML, endometrium, colorectal, lung","L, E",RAD21,1
+14,68286525,69062713,"lipoma, uterine leiomyoma",M,RAD51B,1
+3,12625100,12705725,"pilocytic astrocytoma, prostate","O, E",RAF1,1
+9,135973107,135996563,"PMBL, Hodgkin lymphoma,",L,RALGDS,2
+2,109335937,109402267,inflammatory myofibroblastic tumour,M,RANBP2,1
+4,99182669,99363485,T-ALL,L,RAP1GDS1,1
+17,38465446,38513048,APL,L,RARA,1
+13,48877911,49056122,"retinoblastoma, sarcoma, breast, small cell lung carcinoma","L, E, M, O",RB1,1
+X,47004268,47046210,lung adenocarcinoma,E,RBM10,1
+1,110881128,110889299,acute megakaryocytic leukaemia,L,RBM15,1
+8,145736667,145743210,,M,RECQL4,1
+2,61108656,61158745,Hodgkin lymphoma,L,REL,1
+10,43572475,43625799,"medullary thyroid, papillary thyroid, pheochromocytoma, NSCLC, Spitzoid tumour","E, O",RET,1
+16,74655292,74700779,lung cancer,E,RFWD3,2
+2,107021446,107084832,endometrioid adenocarcinoma,E,RGPD3,2
+1,240938815,241520530,melanoma,E,RGS7,2
+3,49396578,49449635,"diffuse gastric, T cell lymphomas, paediatric Burkitt lymphoma","E, L",RHOA,1
+4,40198527,40248587,NHL,L,RHOH,1
+16,11439288,11445619,"PMBL, Hodgkin lymphoma",L,RMI2,1
+17,78234667,78372586,ALCL,L,RNF213,1
+17,56431037,56494894,"cholangiocarcinoma, ovary, pancreas",E,RNF43,1
+3,75955846,77696661,"colorectal adenocarcinoma, melanoma",E,ROBO2,2
+6,117609463,117747018,"glioblastoma, NSCLC, Spitzoid tumour, cholangiocarcinoma, borderline ovarian","O, E",ROS1,1
+X,153626571,153630680,T-ALL,L,RPL10,1
+1,6245080,6259672,"AML, CML",L,RPL22,1
+1,93297582,93307481,T-ALL,L,RPL5,1
+3,128338817,128369692,AML,L,RPN1,1
+8,108911545,109095876,colorectal,E,RSPO2,1
+6,127439749,127518441,colorectal,E,RSPO3,1
+21,36160098,36421641,"AML, pre B-ALL, T-ALL",L,RUNX1,1
+8,92972359,93107706,AML,L,RUNX1T1,1
+1,153430220,153433177,"melanoma, T-cell lymphoma","E, L",S100A7,2
+20,50400581,50419059,"colorectal cancer, breast cancer, prostate cancer, glioblastoma, melanoma",E,SALL4,1
+7,66452664,66460588,,L,SBDS,1
+20,43953928,43977064,NSCLC,E,SDC4,1
+5,218356,256815,"GIST, paraganglioma","M, O",SDHA,1
+11,61197545,61215001,,M,SDHAF2,1
+1,17345217,17380665,,O,SDHB,1
+1,161284047,161332984,,O,SDHC,1
+11,111957497,111966518,,O,SDHD,1
+22,19701987,19710842,AML,L,SEPT5,2
+X,118751602,118827333,AML,L,SEPT6,2
+17,75277492,75496674,AML*,L,SEPT9,2
+9,131445934,131458679,T-ALL,L,SET,1
+18,42260863,42648475,"aCML, sAML, MDS/MPN-U, CMML, JMML",L,SETBP1,1
+12,122242638,122270562,"CRC, endometrium",E,SETD1B,2
+3,47058179,47205457,clear cell renal carcinoma,E,SETD2,1
+1,150898815,150937211,malignant mesothelioma,E,SETDB1,2
+2,198254508,198299815,myelodysplastic syndrome,L,SF3B1,1
+1,35648533,35658749,papillary renal,E,SFPQ,1
+7,37945543,37956517,"colorectal cancer, melanoma, SCC, gastric cancer, oesophageal SCC",E,SFRP4,1
+6,134490384,134639196,Nodular lymphocyte predominant Hodgkin lymphoma,L,SGK1,2
+12,111843752,111889427,"MPN, sAML, erythrocytosis, B-ALL",L,SH2B3,1
+19,4360367,4400544,AL,L,SH3GL1,1
+10,118644308,118765088,Spitzoid tumour,E,SHTN1,2
+20,1875942,1920543,"HNSCC, colorectal cancer, Lung SCC",E,SIRPA,2
+14,61110133,61116180,Wilms tumour,O,SIX1,1
+2,45232300,45236569,Wilms tumour,O,SIX2,2
+1,2160134,2241558,melanoma,E,SKI,2
+4,25657466,25680370,NSCLC,E,SLC34A2,1
+1,205626979,205649587,prostate,E,SLC45A3,1
+18,45357922,45457512,"colorectal carcinoma, hepatocellular carcinoma",E,SMAD2,1
+15,67358183,67487533,"colorectal carcinoma, oral squamous cell carcinoma",E,SMAD3,1
+18,48556583,48611409,"colorectal, pancreatic, small intestine",E,SMAD4,1
+19,11071677,11172958,"NSCLC, SCCOHT",E,SMARCA4,1
+22,24129161,24176703,malignant rhabdoid,M,SMARCB1,1
+12,50478755,50494495,breast,E,SMARCD1,2
+17,38781214,38804760,,O,SMARCE1,1
+X,53401070,53449677,AML,L,SMC1A,2
+7,128828713,128853386,skin basal cell,E,SMO,1
+7,127292234,127732659,pancreas acinar carcinoma,E,SND1,1
+16,12070595,12668146,"PMBL, Hodgkin lymphoma",L,SNX29,2
+16,11348262,11350036,"Hodgkin lymphoma, PMBL",L,SOCS1,1
+3,181429722,181432221,"NSCLC, oesophageal squamous carcinoma",E,SOX2,1
+13,95361886,95364389,multiple myeloma,L,SOX21,2
+17,19990335,20218068,JMML,L,SPECC1,2
+1,16174359,16266955,"SMZL, adenoid cystic carcinoma, DLBCL",L,SPEN,1
+17,47676248,47755525,"prostate, endometrial",E,SPOP,1
+20,35974557,36034453,"colorectal cancer, endometrial carcinoma",E,SRC,1
+3,9022275,9291063,pilocytic astrocytoma,O,SRGAP3,2
+17,74730197,74733415,"MDS, CLL",L,SRSF2,1
+6,36562145,36573377,follicular lymphoma,L,SRSF3,1
+18,23596578,23670589,synovial sarcoma,M,SS18,1
+20,60718851,60757540,synovial sarcoma,M,SS18L1,1
+X,48114752,48126879,synovial sarcoma,M,SSX1,1
+X,52725946,52736211,synovial sarcoma,M,SSX2,1
+X,48242863,48252785,synovial sarcoma,M,SSX4,1
+3,136055077,136471210,"colorectal cancer, AML","E, L",STAG1,2
+X,123094369,123235348,"bladder carcinoma, glioblastoma, melanoma, Ewing's sarcoma, myeloid neoplasms","E, L, M, O",STAG2,1
+17,40465342,40540586,T-cell large granular lymphocytic leukaemia,L,STAT3,1
+17,40351186,40428424,"large granular lymphocytic leukaemia, skin basal cell, APL","L, E",STAT5B,1
+12,57489191,57505216,"solitary fibrous tumour, meningeal haemangiopericytoma","M, O",STAT6,1
+1,47715814,47779812,T-ALL,L,STIL,1
+19,1205740,1228428,"NSCLC, pancreatic","E, M, O",STK11,1
+2,37070783,37193615,"anaplastic thyroid, papillary thyroid, lung",E,STRN,1
+5,32585605,32604185,lung cancer,E,SUB1,2
+10,104263744,104393292,medulloblastoma,O,SUFU,1
+17,30264037,30328064,endometrial stromal tumour,M,SUZ12,1
+9,93564069,93660831,"MDS, peripheral T-cell lymphoma",L,SYK,1
+17,34136459,34174246,"extraskeletal myxoid chondrosarcoma, ALL","L, M",TAF15,1
+1,47681964,47695443,lymphoblastic leukaemia/biphasic,L,TAL1,1
+9,108424738,108425367,T-ALL,L,TAL2,1
+3,176737143,176914266,"splenic marginal zone lymphoma, primary central nervous system lymphoma, colorectal carcinoma, gallbladder carcinoma","L, E, M",TBL1XR1,1
+12,115108060,115121395,"breast, large intestine, skin",E,TBX3,1
+8,54879116,54935089,salivary adenoma,E,TCEA1,1
+15,57210821,57580712,extraskeletal myxoid chondrosarcoma,M,TCF12,1
+19,1609293,1652604,pre B-ALL,L,TCF3,1
+10,114710009,114927437,colorectal,E,TCF7L2,1
+14,96176305,96180533,T-CLL,L,TCL1A,1
+4,48137800,48271881,myxoid chondrosarcoma,M,TEC,2
+1,118148556,118170994,MM,L,TENT5C,1
+5,1253282,1295162,"melanoma, glioblastoma, hepatocellular carcinoma, bladder, skin basal cell, skin squamous cell, mesothelioma, medulloblastoma, other tumour types","E, O",TERT,1
+10,70320413,70454239,AML,L,TET1,1
+4,106067450,106200973,MDS,L,TET2,1
+X,48886242,48901012,"papillary renal, alveolar soft part sarcoma, renal",E,TFE3,1
+6,41651716,41702798,renal cell carcinoma (childhood epithelioid),"E,M",TFEB,1
+3,100428269,100467810,"papillary thyroid, ALCL, NSCLC, extraskeletal myxoid chondrosarcoma","E, L, M",TFG,1
+19,54610320,54619055,pre-B ALL,L,TFPT,2
+3,195776155,195809060,NHL,L,TFRC,2
+3,30648093,30735634,"head and neck, colorectal",E,TGFBR2,1
+1,36690017,36770958,aneurysmal bone cyst,M,THRAP3,2
+10,102889257,102897545,T-ALL,L,TLX1,1
+5,170736288,170739138,T-ALL,L,TLX3,1
+2,96914254,96931732,,"O, E",TMEM127,1
+21,42836480,42879992,prostate,E,TMPRSS2,1
+X,12993229,12995345,DLBCL,L,TMSB4X,2
+9,117782813,117880536,"SCC, melanoma",E,TNC,2
+6,138188581,138204449,"marginal zone B-cell lymphomas, Hodgkin lymphoma, PMBL",L,TNFAIP3,1
+1,2487805,2495268,follicular lymphoma,L,TNFRSF14,1
+16,12058964,12061925,intestinal T-cell lymphoma,L,TNFRSF17,1
+20,39657458,39753127,AML*,L,TOP1,1
+17,7571720,7590856,"breast, colorectal, lung, sarcoma, adrenocortical, glioma, Spitzoid tumour, multiple other tumour types","L, E, M, O",TP53,1
+3,189349216,189615068,"HNSCC, DLBCL",E,TP63,1
+1,154139941,154164687,"papillary thyroid, ALCL, NSCLC, Spitzoid tumour","E, L",TPM3,1
+19,16178348,16213813,ALCL,L,TPM4,1
+1,186280784,186344457,"papillary thyroid, NSCLC",E,TPR,1
+16,2205766,2228130,meningioma,O,TRAF7,1
+7,138145079,138274738,APL,L,TRIM24,1
+6,28870779,28891766,papillary thyroid,E,TRIM27,1
+1,114935399,115053781,papillary thyroid,E,TRIM33,1
+14,92432335,92506403,AML,L,TRIP11,1
+7,98476113,98610866,melanoma,E,TRRAP,1
+9,135766735,135820008,"renal cell carcinoma, bladder carcinoma","E, O",TSC1,1
+16,2097466,2138713,"pulmonary lymphangioleiomyomatosis (LAM), renal angiomyolipoma, HNSCC","E, O",TSC2,1
+14,81421387,81612646,toxic thyroid adenoma,E,TSHR,1
+21,44513066,44527697,"CLL, MDS",L,U2AF1,1
+8,103265240,103425069,"mantle cell lymphoma, gastric, colorectal","L, E",UBR5,1
+12,95910336,95945266,"lung cancer, colon cancer",E,USP44,2
+17,5019733,5078286,aneurysmal bone cyst,M,USP6,1
+15,50716579,50793276,corticotroph adenoma,E,USP8,1
+X,40944888,41095832,colon carcinoma,E,USP9X,2
+19,6772737,6857118,T-cell lymphoma,L,VAV1,2
+3,10182692,10193904,"renal, haemangioma, pheochromocytoma","E, M, O",VHL,1
+10,114207016,114578503,colorectal,E,VTI1A,2
+X,48542168,48549818,,L,WAS,1
+2,24252210,24270223,colorectal,E,WDCP,1
+12,65444406,65515346,pleomorphic salivary gland adenoma,E,WIF1,1
+9,95947212,96080553,gastric cancer,E,WNK2,2
+8,30891317,31031285,,"L, E, M, O",WRN,1
+11,32409321,32457176,"Wilms tumour, desmoplastic small round cell tumour",O,WT1,1
+3,149235022,149421060,epithelioid haemangioendothelioma,M,WWTR1,1
+9,100437191,100459639,,E,XPA,1
+3,14186647,14220283,,E,XPC,1
+2,61704984,61765418,CLL,L,XPO1,1
+17,1247566,1303672,endometrial stromal sarcoma,M,YWHAE,1
+11,113930315,114121398,APL,L,ZBTB16,1
+12,122957437,122985518,Spitzoid tumour,E,ZCCHC8,2
+10,31608101,31818741,"CCRCC, melanoma",E,ZEB1,2
+16,72816784,73082274,"endometrial, gastric, prostate",E,ZFHX3,1
+13,20532810,20665968,"MPN, NHL",L,ZMYM2,1
+X,70459474,70474499,"CRC, breast cancer",E,ZMYM3,2
+19,54024278,54083523,follicular thyroid adenoma,E,ZNF331,1
+12,6775814,6798676,ALL,L,ZNF384,1
+19,21688366,21720880,GBM,O,ZNF429,2
+7,57187321,57207571,"lung cancer, bladder carcinoma, prostate carcinoma",E,ZNF479,2
+18,22641890,22932116,ALL,L,ZNF521,1
+22,29279580,29453475,"colorectal cancer, adrenocortical carcinoma, gastric cancer",E,ZNRF3,2
+X,15808595,15841383,"MDS, CLL",L,ZRSR2,1
