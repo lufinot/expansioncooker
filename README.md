@@ -2,7 +2,7 @@ This tool is designed to process Expansion Hunter output for the analysis of pai
 
 ## Features:
 
-1. **Process Expansion Hunter Outputs**: Filters genotypes bdsed on paired genotype quality and produces differences.
+1. **Process Expansion Hunter Outputs**: Filters genotypes based on paired genotype quality and produces differences.
 2. **Multiprocessing Support**: Utilizes all available CPU cores for faster processing.
 3. **Feature Extraction**: Feature extraction from produced differences for further analysis.
 4. **Tracking & Logging**: Tracks problamatic cases and logs all events.
