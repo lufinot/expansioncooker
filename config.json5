@@ -1,0 +1,14 @@
+
+{
+  // Directory for logs
+  "LOG_DIR": "ExpansionCookerLogs",
+
+  // Minimum coverage to consider a locus
+  "MIN_READS": 6,
+
+  // High coverage threshold
+  "HIGH_COV": 24,
+
+  // Maximum width of a locus
+  "MAX_WIDTH": 2
+}

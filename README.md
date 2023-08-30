@@ -15,12 +15,12 @@ This tool is designed to process Expansion Hunter output for the analysis of pai
 ### Arguments:
 
 - `RawDir`: Directory containing Expansion Hunter output JSONs.
-- `Manifest`: Manifest file with case and control object ids.
+- `Manifest`: Manifest file with case and control object ids. (Must have columns: `{donor_id,case_object_id,control_object_id}`).
 - `-n` or `--name`: Disease name for output files.
 - `-o` or `--outdir`: Output directory (default is current directory).
 - `-f` or `--feats`: Flag to indicate if features should be created from the output. Default is False.
 
-
+### Outputs
 1. `Name_case.csv`: CSV file containing the case data.
 2. `Name_control.csv`: CSV file containing the control data.
 3. `Name_diff.csv`: CSV file containing the differences between the case and control data.
@@ -29,10 +29,22 @@ This tool is designed to process Expansion Hunter output for the analysis of pai
 
 Logging information is saved in ExpansionCookerLogs directory in script running directory.
 
+## Additional Parameters
+
+### Enviormnent Variables
+- 'DISEASE' : Disease name for logging filename (default datetime)
+- 'LOG_LEVEL' : Logging level (default INFO)
+
+### Config File
+
+- 'LOG_DIR' : Directory for logging (default ExpansionCookerLogs in script running directory)
+- 'MIN_COV' : Minimum coverage for a locus to be considered (default 6)
+- 'HIGH_COV' : Minimum coverage for a locus to be considered well sampled (default 24)
+- 'MAX_WIDTH' : Maximum confidence interval width for locus genotype (default 2)
+
 ## Notes:
 
 - Install packages from requirments.txt
-- Check usage details for input specification and examples.
   
 
 

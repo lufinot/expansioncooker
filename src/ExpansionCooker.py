@@ -1,6 +1,7 @@
 import argparse
 import pandas as pd
 import orjson
+import json5
 import os
 import numpy as np
 import logging
@@ -20,26 +21,30 @@ if slurm_cpus:
 else:
     cpu_count = cpu_count()
 
-MIN_READS = 6
-HIGH_COV = 24
-MAX_WIDTH = 4
+
+# Load configuration values from the default location if the file exists
+config_values = {}
+if os.path.exists('./config.json5'):
+    with open('./config.json5', 'r') as file:
+        config_values = json5.load(file)
 
 
+LOG_DIR = config_values.get("LOG_DIR", 'ExpansionCookerLogs')
+MIN_READS = config_values.get("MIN_READS", 6)
+HIGH_COV = config_values.get("HIGH_COV", 24)
+MAX_WIDTH = config_values.get("MAX_WIDTH", 2)
+
+DISEASE = os.getenv('DISEASE') or datetime.now().strftime('%Y%m%d_%H%M')
 LOG_LEVEL = os.getenv('LOG_LEVEL') or 'info'
+
 log_dict = {'debug': logging.DEBUG, 'info': logging.INFO, 'warning': logging.WARNING, 
             'error': logging.ERROR, 'critical': logging.CRITICAL}
 log_level = log_dict.get(LOG_LEVEL.lower(), logging.INFO)
 
-dis_id = os.getenv('DISEASE')
-if not dis_id:
-    dis_id = datetime.now().strftime('%Y%m%d_%H%M')
+if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR)
 
-
-log_dir = os.getenv('LOG_DIR') or 'ExpansionCookerLogs'
-if not os.path.exists(log_dir):
-    os.makedirs(log_dir)
-
-logging.basicConfig(filename=os.path.join(log_dir, f'{dis_id}_ExpansionCooker.log'), 
+logging.basicConfig(filename=os.path.join(LOG_DIR, f'{DISEASE}_ExpansionCooker.log'), 
                     level=log_level,
                     format='%(asctime)s %(levelname)s: %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S')
