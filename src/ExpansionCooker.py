@@ -14,7 +14,12 @@ import random
 from multiprocessing import Pool, cpu_count
 from functools import partial
 
-cpu_count = int(os.getenv('SLURM_CPUS_PER_TASK')) or cpu_count()
+slurm_cpus = os.getenv('SLURM_CPUS_PER_TASK')
+if slurm_cpus:
+    cpu_count = int(slurm_cpus)
+else:
+    cpu_count = cpu_count()
+
 MIN_READS = 6
 HIGH_COV = 24
 MAX_WIDTH = 4
@@ -30,7 +35,7 @@ if not dis_id:
     dis_id = datetime.now().strftime('%Y%m%d_%H%M')
 
 
-log_dir = 'ExpansionCookerLogs'
+log_dir = os.getenv('LOG_DIR') or 'ExpansionCookerLogs'
 if not os.path.exists(log_dir):
     os.makedirs(log_dir)
 

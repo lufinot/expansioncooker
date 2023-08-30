@@ -1,0 +1,21 @@
+2023-08-29 18:28:52 INFO: Processing DO220358.
+2023-08-29 18:28:52 INFO: Processing DO220357.
+2023-08-29 18:28:52 INFO: Processing DO220331.
+2023-08-29 18:28:52 INFO: Processing DO220490.
+2023-08-29 18:28:52 INFO: Processing DO220535.
+2023-08-29 18:29:23 INFO: Finished DO220358 succesfully.
+2023-08-29 18:29:24 INFO: Finished DO220357 succesfully.
+2023-08-29 18:29:26 INFO: Finished DO220331 succesfully.
+2023-08-29 18:29:27 INFO: Finished DO220535 succesfully.
+2023-08-29 18:29:29 INFO: Finished DO220490 succesfully.
+2023-08-29 18:29:31 INFO: Finished processing files, combining results.
+2023-08-29 18:29:39 INFO: Proportion of problematic loci: 0.07556917845533079
+2023-08-29 18:29:39 INFO: Saving DataFrames.
+2023-08-29 18:29:54 INFO: Finished Saving DataFrames.
+2023-08-29 18:29:54 INFO: Creating features from the output.
+2023-08-29 18:30:17 WARNING: Exact p-value calculation switched to normal approximation due to presence of zeros.
+2023-08-29 18:30:17 WARNING: Sample size is too small for normal approximation.
+2023-08-29 18:30:17 INFO: Calculated Wilcoxon p-values.
+2023-08-29 18:31:18 INFO: Extracted cluster features.
+2023-08-29 18:31:20 INFO: Feats saved to example/output/example_feats.csv
+2023-08-29 18:31:20 INFO: Finished.

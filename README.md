@@ -2,14 +2,11 @@ This tool is designed to process Expansion Hunter output for the analysis of pai
 
 ## Features:
 
-1. **Process Expansion Hunter Outputs**: The tool processes paired genotype data from Expansion Hunter's JSON outputs.
-2. **Log Differences**: Logs differences in a structured format, making it easier to identify significant variations.
-3. **Multiprocessing Support**: Utilizes all available CPU cores for faster processing.
-4. **Feature Extraction**: Can interface with a feature extraction tool to further analyze and characterize the differences identified.
+1. **Process Expansion Hunter Outputs**: Filters genotypes bdsed on paired genotype quality and produces differences.
+2. **Multiprocessing Support**: Utilizes all available CPU cores for faster processing.
+3. **Feature Extraction**: Feature extraction from produced differences for further analysis.
+4. **Tracking & Logging**: Tracks problamatic cases and logs all events.
 
-## Prerequisites:
-
-- Python 3.x
 
 ## Usage:
 
@@ -23,28 +20,19 @@ This tool is designed to process Expansion Hunter output for the analysis of pai
 - `-o` or `--outdir`: Output directory (default is current directory).
 - `-f` or `--feats`: Flag to indicate if features should be created from the output. Default is False.
 
-### Example:
 
-```
-python ExpansionCooker.py /path/to/raw_eh /path/to/manifest.csv -n Alzheimer -o /path/to/output_dir -f
-```
+1. `Name_case.csv`: CSV file containing the case data.
+2. `Name_control.csv`: CSV file containing the control data.
+3. `Name_diff.csv`: CSV file containing the differences between the case and control data.
+4. `Name_tracking.csv`: CSV file containing tracking information.
+5. (Optional, if `-f` is specified) `Name_feats.csv`: CSV file containing extracted features from the differences.
 
-
-## Outputs:
-
-1. `DiseaseName_case.csv`: CSV file containing the case data.
-2. `DiseaseName_control.csv`: CSV file containing the control data.
-3. `DiseaseName_diff.csv`: CSV file containing the differences between the case and control data.
-4. `DiseaseName_tracking.csv`: CSV file containing tracking information.
-5. (Optional, if `-f` is specified) `DiseaseName_feats.csv`: CSV file containing extracted features from the differences.
+Logging information is saved in ExpansionCookerLogs directory in script running directory.
 
 ## Notes:
 
 - Install packages from requirments.txt
-- Check details for input specification
+- Check usage details for input specification and examples.
   
-## Future Work:
 
-- Improvement of filtering for higher resolution
-- Automation of result ranking based on produced features
 
