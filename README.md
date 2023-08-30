@@ -1,3 +1,5 @@
+# Expansion Cooker
+
 This tool is designed to process Expansion Hunter output for the analysis of paired genotype differences. It facilitates the comparison of paired genotypes through the filtering of high-quality differences and feature extraction.
 
 ## Features:
