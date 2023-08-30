@@ -17,8 +17,8 @@ This tool is designed to process Expansion Hunter output for the analysis of pai
 - `RawDir`: Directory containing Expansion Hunter output JSONs.
 - `Manifest`: Manifest file with case and control object ids. (Must have columns: `{donor_id,case_object_id,control_object_id}`).
 - `-n` or `--name`: Disease name for output files.
-- `-o` or `--outdir`: Output directory (default is current directory).
-- `-f` or `--feats`: Flag to indicate if features should be created from the output. Default is False.
+- `-o` or `--outdir`: Output directory (Default: current directory).
+- `-f` or `--feats`: Flag to indicate if features should be created from the output (Default: False).
 
 ### Outputs
 1. `Name_case.csv`: CSV file containing the case data.
@@ -45,6 +45,7 @@ Logging information is saved in ExpansionCookerLogs directory in script running 
 ## Notes:
 
 - Install packages from requirments.txt
+
   
 
 
