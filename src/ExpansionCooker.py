@@ -524,13 +524,14 @@ def extract_genotypes_diffs(manifest_path, disease_name, raw_eh_dir, output_dir)
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir)
     
+    # For each donor, process their files in parallel
     with Pool(processes=cpu_count) as pool:
         func = partial(process_donor, raw_eh_dir=raw_eh_dir)
         results = pool.map(func, manifest.to_dict('records'))
-
-
     logging.info('Finished processing files, combining results.')
-    # Aggregate results
+
+
+    # Aggregate results, currently returns a list of lists of DataFrames
     case_df_list, control_df_list, diff_df_list, df_tracking_list, donor_ids = zip(*results)
     case_df = [item for sublist in case_df_list for item in sublist]
     control_df = [item for sublist in control_df_list for item in sublist]

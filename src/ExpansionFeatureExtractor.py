@@ -16,9 +16,7 @@ import warnings
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 def split_to_bed(df: pd.DataFrame, colname) -> pd.DataFrame:
-    """ 
-    Splits the given column into 3 columns with titles Chromosome, Start, End
-    """
+    """ Splits the given column into 3 columns with titles Chromosome, Start, End. """
     split_data = df[colname].str.split(pat=':', n=1, expand=True)
     df['Chromosome'] = split_data[0]
     start_end_data = split_data[1].str.split(pat='-', n=1, expand=True)
@@ -30,6 +28,7 @@ def split_to_bed(df: pd.DataFrame, colname) -> pd.DataFrame:
 def get_COSMIC_regions(df: pd.DataFrame) -> pd.DataFrame:
     """
     Get COSMIC regions from the dataframe.
+
     Args:
         df: Dataframe with locations of mutations.
     Returns:
@@ -71,6 +70,7 @@ def get_COSMIC_regions(df: pd.DataFrame) -> pd.DataFrame:
 def calculate_wilcoxon_pvals(df: pd.DataFrame) -> np.ndarray:
     """
     Calculate Wilcoxon p-values for each column in a dataframe.
+
     Args:
         df: Dataframe with rows as samples and cols as regions.
     Returns:
@@ -92,6 +92,7 @@ def calculate_wilcoxon_pvals(df: pd.DataFrame) -> np.ndarray:
 def process_df(df: pd.DataFrame) -> pd.DataFrame:
     """
     Remove columns with all zeros and sample_id column if present.
+
     Args:
         df: Dataframe with rows as samples and cols as regions.
     Returns:
@@ -106,6 +107,7 @@ def process_df(df: pd.DataFrame) -> pd.DataFrame:
 def add_motif_info(df: pd.DataFrame) -> pd.DataFrame:
     """ 
     Add motif information to the dataframe, from the locus_structures.csv file.
+
     Args:
         df: Dataframe with rows as samples and cols as regions.
     Returns:
@@ -121,6 +123,7 @@ def add_motif_info(df: pd.DataFrame) -> pd.DataFrame:
 def cluster_features(df: pd.DataFrame) -> pd.DataFrame:
     """
     Call cluster function to get cluster features for each locus. 
+
     Args:
         df: Dataframe with rows as samples and cols as regions.
     Returns:
@@ -180,7 +183,6 @@ def process_and_extract_features(df) -> pd.DataFrame:
     df = process_df(df)
 
     features_df = pd.DataFrame({'ReferenceRegion': df.columns})
-
 
     features_df['raw_pvals'], features_df['corrected_pvals'] = calculate_wilcoxon_pvals(df)
     logging.info("Calculated Wilcoxon p-values.")
