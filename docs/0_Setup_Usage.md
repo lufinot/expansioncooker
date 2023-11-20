@@ -18,6 +18,8 @@
 Using the example folder provided:
 
     python ExpansionCooker.py example/jsons/ example/manifest.csv -n Test -o example/out/ -f
+    
+Due to the nature and size of the data, the example files are blank, and outputs are not shown.
 
 ### Arguments:
 
