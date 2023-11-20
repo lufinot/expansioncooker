@@ -12,7 +12,12 @@ This tool is designed to process Expansion Hunter output for the analysis of pai
 
 ## Usage:
 
-	python ExpansionCooker.py <RawDir> <Manifest> -n <DiseaseName> -o <OutputDir> [-f]
+	1. Create Environment, install packages from requirements.txt
+	2. Create config file (optional)
+	3. Set environment variables for logging (optional)
+	4. Run ExpansionCooker.py 
+		
+		python ExpansionCooker.py <RawDir> <Manifest> -n <DiseaseName> -o <OutputDir> [-f]
 
 ### Arguments:
 
@@ -29,7 +34,7 @@ This tool is designed to process Expansion Hunter output for the analysis of pai
 4. `Name_tracking.csv`: CSV file containing tracking information.
 5. (Optional, if `-f` is specified) `Name_feats.csv`: CSV file containing extracted features from the differences.
 
-Logging information is saved in ExpansionCookerLogs directory in script running directory.
+Logging information is saved to specified log directory or ExpansionCookerLogs. 
 
 ## Additional Parameters
 
@@ -46,7 +51,8 @@ Logging information is saved in ExpansionCookerLogs directory in script running 
 
 ## Notes:
 
-- Install packages from requirments.txt
+- Refer to example manifest file for formatting
+- Example config file with defaults is provided, but not required
 
   
 

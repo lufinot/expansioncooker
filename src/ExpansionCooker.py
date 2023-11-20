@@ -32,6 +32,7 @@ LOG_DIR = config_values.get("LOG_DIR", 'ExpansionCookerLogs')
 MIN_READS = config_values.get("MIN_READS", 6)
 HIGH_COV = config_values.get("HIGH_COV", 24)
 MAX_WIDTH = config_values.get("MAX_WIDTH", 2)
+DIFF_RATIO = 0.30
 
 # Logging parameters, ugly setup since weird to pass values from script call with the multiprocessing
 #       Needs enviormental variables to be set for proper logging (Might be better soln)
@@ -84,9 +85,18 @@ class GenotypeChecker:
     """ 
     Class to check if a genotype is supported by the reads.
 
-    :param genotypes: List of genotypes to check.
-    :param spanning_reads: String containing the counts of spanning reads.
-    :param flanking_reads: String containing the counts of flanking reads.
+    args:
+        genotypes: List of genotypes
+        spanning_reads: String containing the counts of spanning reads. (EH output)
+        flanking_reads: String containing the counts of flanking reads. (EH output)
+
+    vals:
+        genotypes: List of genotypes to check.
+        spanning_reads_dict: Dictionary of count of spanning reads for each genotype present.
+        flanking_reads_list: List of flanking reads.
+        supported_genotypes: List of supported genotypes.
+        tot_spanning: Total spanning reads.
+        tot_flanking: Total flanking reads.
     """
     def __init__(self, genotypes, spanning_reads, flanking_reads):
         self.genotypes = genotypes
@@ -106,9 +116,13 @@ class GenotypeChecker:
     def add_genotypes(self, genotypes):
         # append to front of list
         self.genotypes = genotypes + self.genotypes
+
+    def determine_read_amount(self, num_spanning, num_flanking):
+        return num_spanning + (num_flanking / 4)
         
     def num_reads(self):
-        return self.tot_spanning + (self.tot_flanking / 4)
+        return self.determine_read_amount(self.tot_spanning, self.tot_flanking)
+    
 
     def _count_flanking_below_threshold(self, threshold):
         count = 0
@@ -166,21 +180,21 @@ class GenotypeChecker:
         """
         SPANNING_UPPER_THRESHOLD = max(4, self.tot_spanning / 3)
         SPANNING_LOWER_THRESHOLD = max(2, self.tot_spanning / 6)
-        FLANKING_THRESHOLD = max(6, self.tot_flanking / 4)
+        TOTAL_LOWER_THRESHOLD = max(8, self.num_reads() / 4)
         
-        close_spanning_reads = self._get_spanning_reads_near_genotype(genotype)
+        num_close_spanning_reads = self._get_spanning_reads_near_genotype(genotype)
         
         # if genotype shows up > 4 times in spanning reads
-        if close_spanning_reads > SPANNING_UPPER_THRESHOLD:
+        if num_close_spanning_reads > SPANNING_UPPER_THRESHOLD:
             self._remove_supporting_reads(genotype)
             return True
         
         # elif genotype shows up 2<4 times in spanning reads
-        elif SPANNING_LOWER_THRESHOLD < close_spanning_reads <= SPANNING_UPPER_THRESHOLD:
-            below_genotype_flanking_reads = self._get_flanking_reads_below_genotype(genotype)
+        elif SPANNING_LOWER_THRESHOLD < num_close_spanning_reads <= SPANNING_UPPER_THRESHOLD:
+            num_below_genotype_flanking_reads = len(self._get_flanking_reads_below_genotype(genotype))
             
             # if more than THRESHOLD reads below genotype
-            if len(below_genotype_flanking_reads) > FLANKING_THRESHOLD:
+            if self.determine_read_amount(num_below_genotype_flanking_reads, num_close_spanning_reads) > TOTAL_LOWER_THRESHOLD:
                 self._remove_supporting_spanning_reads(genotype)
                 self._remove_supporting_flanking_reads(genotype)
                 return True
@@ -189,20 +203,23 @@ class GenotypeChecker:
     
     def _remove_supporting_reads(self, genotype):
         """
-        Private method to remove reads that support the given genotype.
+        Private method to remove a proportion of reads that support the given genotype.
         """
         self._remove_supporting_spanning_reads(genotype)
         self._remove_supporting_flanking_reads(genotype)
     
     def _remove_supporting_flanking_reads(self, genotype):
         """
-        Private method to remove reads that support the given genotype from flanking reads.
+        Remove from self an amount of reads below the genotype that is proportional to dist of genotype from next greatest genotype.
+        
+        E.G. if genotype is 10 and next greatest genotype is 20, remove 50% of reads below 10
+             if genotype is 10 and next greatest genotype is 11, remove 90% of reads below 10
         """
         # make new array with reads above genotype
         above = [read for read in self.flanking_reads_list if read > genotype]
         below = [read for read in self.flanking_reads_list if read <= genotype]
 
-        # Calcualte proportion of reads below genotype that belong to gneotype being removed
+        # Calculate proportion of reads below genotype that belong to gneotype being removed
         b = max(above) if len(above) > 0 else genotype
         b += 0.01
         r = genotype / b
@@ -216,7 +233,7 @@ class GenotypeChecker:
 
     def _remove_supporting_spanning_reads(self, genotype):
         """
-        Private method to remove reads that support the given genotype from spanning reads.
+        Remove half the spanning reads that support the given genotype.
         """
 
         self.spanning_reads_dict[genotype - 1] /= 2
@@ -284,6 +301,8 @@ def process_locus(donor_id, data_case, data_control, data_frames):
 
 
     """
+    # random int for testing
+    sampled_to_print = random.randint(0, 1000) == 1
 
     allele_count = data_case['AlleleCount']
     high_cov = HIGH_COV
@@ -306,6 +325,18 @@ def process_locus(donor_id, data_case, data_control, data_frames):
             case_genotypes = list(map(int, case.get('Genotype').split('/')))
         except AttributeError as a:
             continue
+
+        if sampled_to_print:
+            log_message = (
+                f"\nControl - Genotype: {control['Genotype']}, \n"
+                f"CountsOfFlankingReads: {control['CountsOfFlankingReads']}, \n"
+                f"CountsOfSpanningReads: {control['CountsOfSpanningReads']}\n"
+                f"Case - Genotype: {case['Genotype']}, \n"
+                f"CountsOfFlankingReads: {case['CountsOfFlankingReads']}, \n"
+                f"CountsOfSpanningReads: {case['CountsOfSpanningReads']}"
+            )
+            logging.debug(log_message)
+
         
         # make genotype checker objects for case and cotrol
         case_genotype_checker = GenotypeChecker(case_genotypes, case['CountsOfSpanningReads'], case['CountsOfFlankingReads'])
@@ -316,6 +347,8 @@ def process_locus(donor_id, data_case, data_control, data_frames):
 
         # if very high read count, trust Expansion Hunter's Original genotypes
         if case_num_reads > high_cov and control_num_reads > high_cov:
+            if sampled_to_print:
+                logging.debug(f'High read count, trusting original genotypes.\n')
             append_genotype_data(case_genotypes, control_genotypes, donor_id, ReferenceRegion, 
                                  data_frames)
             continue
@@ -323,16 +356,20 @@ def process_locus(donor_id, data_case, data_control, data_frames):
         # if very low read count, skip (REVISIT)
         if case_num_reads < min_reads:
             track_issue(data_frames['tracking_df'], donor_id, ReferenceRegion, motif, 'case_low_reads', count=allele_count)
+            if sampled_to_print:
+                logging.debug(f'Low read count, skipping.\n')
             continue
 
         if control_num_reads < min_reads:
             track_issue(data_frames['tracking_df'], donor_id, ReferenceRegion, motif, 'control_low_reads', count=allele_count)
+            if sampled_to_print:
+                logging.debug(f'Low read count, skipping.\n')
             continue
 
         
         # if there is a big percentage difference in read counts, use support checking method
         diff = abs(case_num_reads - control_num_reads)/min(case_num_reads, control_num_reads)
-        if diff > 0.30:
+        if diff > DIFF_RATIO:
             # (REVISIT) Potential bias towards expansions, ideally this function doesnt start with contorl and then check case, 
             #   should find way to make it start based on amount of support or something else IDRK
 
@@ -342,6 +379,8 @@ def process_locus(donor_id, data_case, data_control, data_frames):
             # If no supported control genotypes, log to tracking and move to next variant
             if len(checked_control_genotypes) == 0:
                 track_issue(data_frames['tracking_df'], donor_id, ReferenceRegion, motif, 'control_low_reads', count=allele_count)
+                if sampled_to_print:
+                    logging.debug(f'No control genotypes supported, skipping.\n')
                 continue
 
             # Add the supported genotypes for control to the case genotype checker, 
@@ -353,6 +392,8 @@ def process_locus(donor_id, data_case, data_control, data_frames):
 
             if len(checked_case_genotypes) == 0:
                 track_issue(data_frames['tracking_df'], donor_id, ReferenceRegion, motif, 'case_low_reads', count=allele_count)
+                if sampled_to_print:
+                    logging.debug(f'No case genotypes supported, skipping.\n')
                 continue
 
             # Supported control assumed to be final here.
@@ -388,6 +429,9 @@ def process_locus(donor_id, data_case, data_control, data_frames):
 
             if len(final_case_genotypes) < allele_count:
                 track_issue(data_frames['tracking_df'], donor_id, ReferenceRegion, motif, 'low_reads', count=1)
+
+            if sampled_to_print:
+                logging.debug(f'Final Case: {final_case_genotypes}, Final Control: {checked_control_genotypes}\n')
 
             append_genotype_data(final_case_genotypes, checked_control_genotypes, donor_id, ReferenceRegion, 
                                 data_frames)
