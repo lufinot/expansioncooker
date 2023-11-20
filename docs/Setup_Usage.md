@@ -7,21 +7,9 @@
     pip install -r requirements.txt
 3. Create a config file (optional).
     Example config file with defaults is provided, but not required.
-
 4. Set environment variables for logging (optional).
     export DISEASE=<disease_name> (default datetime)
     export LOG_LEVEL=<log_level> (default INFO)
-
-## Input Files 
-Check the example folder for example input files.
-
-### Manifest File
-The manifest file is a CSV file with the following columns: `{donor_id,case_object_id,control_object_id}`.
-- donor_id: unique identifier for the donor. 
-- case_object_id and control_object_id: prefixes of the jsons for the case and control Expansion hunter output for the donor. 
-
-### Expansion Hunter Output
-The output JSONs directly from Expansion Hunter.
 
 ## Usage
 ***
@@ -35,10 +23,22 @@ The output JSONs directly from Expansion Hunter.
 - `-o` or `--outdir`: Output directory (Default: current directory).
 - `-f` or `--feats`: Flag to indicate if features should be created from the output (Default: False).
 
-### Outputs
+## Outputs
 Information on the outputs can be found in the [Outputs](link) file.
 
 Logging information is saved to specified log directory or ExpansionCookerLogs. 
+
+# Input Files Details
+***
+Check the example folder for example input files.
+
+### Manifest File
+The manifest file is a CSV file with the following columns: `{donor_id,case_object_id,control_object_id}`.
+- donor_id: unique identifier for the donor. 
+- case_object_id and control_object_id: prefixes of the jsons for the case and control Expansion hunter output for the donor. 
+
+### Expansion Hunter Output
+The output JSONs directly from Expansion Hunter.
 
 ### Config File Parameters
 
@@ -46,5 +46,7 @@ Logging information is saved to specified log directory or ExpansionCookerLogs.
 - 'MIN_COV' : Minimum coverage for a locus to be considered (default 6)
 - 'HIGH_COV' : Minimum coverage for a locus to be considered well sampled (default 24)
 - 'MAX_WIDTH' : Maximum confidence interval width for locus genotype (default 2)
+
+
 
 
