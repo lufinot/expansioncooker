@@ -30,9 +30,10 @@ def get_COSMIC_regions(df: pd.DataFrame) -> pd.DataFrame:
     Get COSMIC regions from the dataframe.
 
     Args:
-        df: Dataframe with locations of mutations.
+        df -- Dataframe with locations of mutations.
+
     Returns:
-        df: Dataframe with added COSMIC annotations
+        df -- Dataframe with added COSMIC annotations
     """
     df_bed_format = split_to_bed(df, 'ReferenceRegion')
 
@@ -72,9 +73,10 @@ def calculate_wilcoxon_pvals(df: pd.DataFrame) -> np.ndarray:
     Calculate Wilcoxon p-values for each column in a dataframe.
 
     Args:
-        df: Dataframe with rows as samples and cols as regions.
+        df -- Dataframe with rows as samples and cols as regions.
+
     Returns:
-        pvals: Array of p-values for each region.
+        pvals -- Array of p-values for each region.
     """
     with warnings.catch_warnings(record=True) as w:
         warnings.simplefilter("once")
@@ -94,9 +96,10 @@ def process_df(df: pd.DataFrame) -> pd.DataFrame:
     Remove columns with all zeros and sample_id column if present.
 
     Args:
-        df: Dataframe with rows as samples and cols as regions.
+        df -- Dataframe with rows as samples and cols as regions.
+
     Returns:
-        df: Processed dataframe.
+        df -- Processed dataframe.
     """
     if 'sample_id' in df.columns:
         df.drop(columns=['sample_id'], axis=1, inplace=True)
@@ -125,9 +128,10 @@ def cluster_features(df: pd.DataFrame) -> pd.DataFrame:
     Call cluster function to get cluster features for each locus. 
 
     Args:
-        df: Dataframe with rows as samples and cols as regions.
+        df -- Dataframe with rows as samples and cols as regions.
+
     Returns:
-        cluster_df: With Cols ['num_clusters', 'cluster_means', 'cluster_sds', 'out3', 'out5']
+        cluster_df -- With Cols ['num_clusters', 'cluster_means', 'cluster_sds', 'out3', 'out5']
     """
     result = df.apply(lambda x: cluster_and_outliers(x), axis=0).T
     result.columns = ['num_clusters', 'cluster_means', 'cluster_sds', 'out3', 'out5']
@@ -178,6 +182,15 @@ def cluster_and_outliers(x: pd.Series) -> list:
 
     
 def process_and_extract_features(df) -> pd.DataFrame:
+    """ 
+    Extracts features from difference dataframe.
+
+    Args:
+        df -- Dataframe with rows as samples and cols as loci.
+    
+    Returns:
+        features_df -- Dataframe with features extracted.
+    """
     logging.debug("Processing and extracting features...")
     
     df = process_df(df)

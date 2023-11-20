@@ -85,18 +85,18 @@ class GenotypeChecker:
     """ 
     Class to check if a genotype is supported by the reads.
 
-    args:
-        genotypes: List of genotypes
-        spanning_reads: String containing the counts of spanning reads. (EH output)
-        flanking_reads: String containing the counts of flanking reads. (EH output)
+    Args:
+        genotypes -- List of genotypes
+        spanning_reads -- String containing the counts of spanning reads. (EH output)
+        flanking_reads -- String containing the counts of flanking reads. (EH output)
 
-    vals:
-        genotypes: List of genotypes to check.
-        spanning_reads_dict: Dictionary of count of spanning reads for each genotype present.
-        flanking_reads_list: List of flanking reads.
-        supported_genotypes: List of supported genotypes.
-        tot_spanning: Total spanning reads.
-        tot_flanking: Total flanking reads.
+    Vals:
+        genotypes -- List of genotypes to check.
+        spanning_reads_dict -- Dictionary of count of spanning reads for each genotype present.
+        flanking_reads_list -- List of flanking reads.
+        supported_genotypes -- List of supported genotypes.
+        tot_spanning -- Total spanning reads.
+        tot_flanking -- Total flanking reads.
     """
     def __init__(self, genotypes, spanning_reads, flanking_reads):
         self.genotypes = genotypes
@@ -262,8 +262,8 @@ class GenotypeChecker:
                 self._remove_supporting_reads(genotype)
         return self.supported_genotypes or []
     
-def append_genotype_data(case_genotypes, control_genotypes, donor_id, ReferenceRegion,
-                        data_frames):
+def append_genotype_data(case_genotypes, control_genotypes, donor_id, ReferenceRegion, data_frames):
+    """ Appends the genotypes and differences to the given data frames."""
     if len(case_genotypes) == 2:
         case_genotypes, control_genotypes = decide_genotype_order(case_genotypes, control_genotypes)
 
@@ -282,24 +282,16 @@ def track_issue(tracking_df, donor_id, ReferenceRegion, motif, issue, count=2):
             
 def process_locus(donor_id, data_case, data_control, data_frames):
     """ 
-    Function to process a single locus from the Expansion Hunter output. For each variant in the locus, it will check if the reported genotype is supported by the reads. If not, it will try to find a supported genotype. If it cannot find a supported genotype, it will log the locus as problematic. 
+    Function to process a single locus from the Expansion Hunter output.
 
-    Logic for checking if a genotype is supported by the reads:
-    1. If the total read count is very high, trust the reported genotype.
-    2. If the total read count for case OR control is very low, skip.
-    3. If there is a big difference in read counts, use the support checking method.
-        3.1 Check what genotypes in control are supported in control reads
-        3.2 Check what genotypes in case + control are supported by case reads
-        3.3 Pair up the supported genotypes
-    4. Otherwise, use the confidence interval approach.
+    Args:
+        donor_id -- The donor id.
+        data_case -- The data for the case.
+        data_control -- The data for the control.
+        data_frames -- The data frames to append the genotypes to.
 
-    Keyword arguments:
-    donor_id -- The donor id.
-    data_case -- The data for the case.
-    data_control -- The data for the control.
-    data_frames -- The data frames to append the genotypes to.
-
-
+    Returns:
+        None, appends genotypes to data_frames.
     """
     # random int for testing
     sampled_to_print = random.randint(0, 1000) == 1
@@ -447,14 +439,14 @@ def ci_approach(allele_count, donor_id, case, control, data_frames):
     Perform confidence interval approach for allele count analysis. Checks for wide confidence intervals and tries to pair up genotypes with intervals within specified range.
 
     Args:
-        allele_count (int): The allele count.
-        donor_id (str): The donor ID.
-        case (dict): The case data.
-        control (dict): The control data.
-        data_frames (dict): The data frames to append the genotypes to.
+        allele_count --  The allele count.
+        donor_id -- The donor ID.
+        case -- The case data.
+        control -- The control data.
+        data_frames -- The data frames to append the genotypes to.
 
     Returns:
-        None
+        None, appends genotypes to data_frames.
     """
     ReferenceRegion = case['ReferenceRegion']
     # get values
@@ -511,10 +503,12 @@ def ci_approach(allele_count, donor_id, case, control, data_frames):
 def process_donor(donor, raw_eh_dir):
     """ Process all loci for a single donor.
 
-    :param donor: donor information from the manifest, including the case and control object ids and the donor id
-    :param raw_eh_dir: directory with Expansion Hunter output JSONs
+    Args: 
+        donor -- The donor object.
+        raw_eh_dir -- The directory with the Expansion Hunter output JSONs.
 
-    :return: DataFrames with the genotypes for the case and control, the difference between the genotypes, and a DataFrame with tracking information and the donor id.
+    Returns:
+        DataFrames with the genotypes and differences.
     """
     donor_id = donor['donor_id']
     logging.info(f'Processing {donor_id}.')
@@ -559,7 +553,18 @@ def process_donor(donor, raw_eh_dir):
     return data_frames['case_df'], data_frames['control_df'], data_frames['diff_df'], data_frames['tracking_df'], donor_id
 
 def extract_genotypes_diffs(manifest_path, disease_name, raw_eh_dir, output_dir):
-    
+    """
+    Finds and verifies the genotypes for the case and control for each donor in the manifest and calculates the difference between the genotypes.
+
+    Args:
+        manifest_path -- The path to the manifest file.
+        disease_name -- The name of the disease.
+        raw_eh_dir -- The directory with the Expansion Hunter output JSONs.
+        output_dir -- The output directory.
+
+    Returns:
+        DataFrame with the difference between the genotypes.
+    """
     # Load the manifest
     manifest = pd.read_csv(manifest_path)
 
