@@ -2,18 +2,10 @@
 
 This tool is designed to process [Expansion Hunter](https://github.com/Illumina/ExpansionHunter/tree/master) output for the analysis of paired genotype differences. It facilitates the comparison of paired genotypes by identifying high-quality differences supported in the data and extracting significant features for downstream analysis.
 
-## Features:
-
-1. **Process Expansion Hunter Outputs**: Filters genotypes based on paired genotype quality and produces differences.
-2. **Multiprocessing Support**: Utilizes all available CPU cores for faster processing.
-3. **Feature Extraction**: Feature extraction from produced differences for further analysis.
-4. **Tracking & Logging**: Tracks problematic cases and logs all events.
-
-
-## Usage:
+## How-To:
 Setup guide, usage, and output information can be found in the [docs](docs/).
 
-## Methods:
+## Methods
 ### Significant Difference Identification
 A rough overview of the process for determing wether genotypes can be considered is as follows:
 1. If the total read count is high for both case & control, trust the Expansion Hunter reported genotype.

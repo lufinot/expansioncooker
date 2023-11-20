@@ -1,5 +1,5 @@
 # Setup 
-***
+
 1. Ensure you have python 3.6 or higher installed.
 2. Create a python environment and install the required packages from requirements.txt.
     python3 venv -m <env_name>
@@ -12,7 +12,7 @@
     export LOG_LEVEL=<log_level> (default INFO)
 
 ## Usage
-***
+
     python ExpansionCooker.py <RawDir> <Manifest> -n <DiseaseName> -o <OutputDir> [-f]
 
 ### Arguments:
@@ -29,7 +29,7 @@ Information on the outputs can be found in the [Outputs](link) file.
 Logging information is saved to specified log directory or ExpansionCookerLogs. 
 
 # Input Files Details
-***
+
 Check the example folder for example input files.
 
 ### Manifest File
