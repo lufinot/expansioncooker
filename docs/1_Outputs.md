@@ -24,4 +24,4 @@ The features extracted from the differences are as follows:
     - Outliers in the differences
 - Aditional Information
     - Counts of supported differences
-    - Overlap with COSMIC genes
+    - Overlap with [COSMIC](https://cancer.sanger.ac.uk/cosmic) genes
