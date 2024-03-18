@@ -22,14 +22,15 @@ def extract_locus_data(file_path, locus_name):
             # Check for the specific path in the JSON structure
             if (prefix, event) == ('LocusResults.item.Variants.item.VariantId', 'string'):
                 current_variant_id = value
-            if prefix.endswith(current_variant_id + '.Genotype'):
-                genotype = value
             if prefix.endswith(current_variant_id + '.CountsOfFlankingReads'):
                 flanking_counts = value
             if prefix.endswith(current_variant_id + '.CountsOfInrepeatReads'):
                 inrepeat_counts = value
             if prefix.endswith(current_variant_id + '.CountsOfSpanningReads'):
                 spanning_counts = value
+                genotype = "NA"
+            if prefix.endswith(current_variant_id + '.Genotype'):
+                genotype = value
             if prefix.endswith('.ReferenceRegion') and value == locus_name:
                 found = True
                 break
