@@ -1,6 +1,7 @@
 import os
 import ijson
 import pandas as pd
+import argparse
 
 def extract_locus_data(file_path, locus_name):
     """
@@ -64,7 +65,7 @@ def process_donor(donor, raw_eh_dir, locus):
     return donor_id, case_counts, control_counts, donor['case_object_id'], donor['control_object_id']
 
 
-def extract_genotypes_diffs(manifest_path, raw_eh_dir, output_dir, locus):
+def extract_genotypes_counts(manifest_path, raw_eh_dir, output_dir, locus):
     
     # Load the manifest
     manifest = pd.read_csv(manifest_path)
@@ -78,8 +79,9 @@ def extract_genotypes_diffs(manifest_path, raw_eh_dir, output_dir, locus):
 
     donors, case_counts, control_counts, case_file, control_file = zip(*results)
     df = pd.DataFrame({'donor_id': donors, 'case_counts': case_counts, 'control_counts': control_counts, 'case_file': case_file, 'control_file': control_file})
-    df.to_csv('lil.csv', index=False)
-    df = pd.read_csv('lil.csv')
+    output_path = os.path.join(output_dir, locus + 'genotype_counts.csv')
+    df.to_csv(output_path, index=False)
+    df = pd.read_csv(output_path)
     # Function to extract counts from the string representation of dictionaries
     def extract_counts(counts_str):
         # Convert the string representation of dictionary into an actual dictionary
@@ -98,6 +100,29 @@ def extract_genotypes_diffs(manifest_path, raw_eh_dir, output_dir, locus):
     df.drop(['case_counts', 'control_counts'], axis=1, inplace=True)
 
         # logging.info('Finished Saving DataFrames.')
-    df.to_csv('lil.csv', index=False)
+
+    df.to_csv(output_path, index=False)
 
     return df
+
+
+def init_argparse():
+    parser = argparse.ArgumentParser(description='Process Expansion Hunter output for analysis of paired genotype differences.')
+    parser.add_argument('raw_eh', metavar='RawDir', type=str, help='Directory with Expansion Hunter output JSONs.')
+    parser.add_argument('manifest', metavar='Manifest', type=str, help='Manifest file with case and control object ids.')
+    parser.add_argument('--locus', '-l', required=True, help='Locus of Interest.')
+    parser.add_argument('--outdir', '-o', required=True, help='Output directory (default .).')
+    return parser
+
+
+def main():
+    parser = init_argparse()
+    args = parser.parse_args()
+    extract_genotypes_counts(args.manifest, args.raw_eh, args.outdir, args.locus)
+
+
+
+if __name__ == "__main__":
+    main()
+    
+  
