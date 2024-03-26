@@ -80,7 +80,7 @@ def extract_genotypes_counts(manifest_path, raw_eh_dir, output_dir, locus):
 
     donors, case_counts, control_counts, case_file, control_file = zip(*results)
     df = pd.DataFrame({'donor_id': donors, 'case_counts': case_counts, 'control_counts': control_counts, 'case_file': case_file, 'control_file': control_file})
-    output_path = os.path.join(output_dir, locus + 'genotype_counts.csv')
+    output_path = output_dir + 'genotype_counts.csv'
     df.to_csv(output_path, index=False)
     df = pd.read_csv(output_path)
     # Function to extract counts from the string representation of dictionaries
@@ -112,7 +112,7 @@ def init_argparse():
     parser.add_argument('raw_eh', metavar='RawDir', type=str, help='Directory with Expansion Hunter output JSONs.')
     parser.add_argument('manifest', metavar='Manifest', type=str, help='Manifest file with case and control object ids.')
     parser.add_argument('--locus', '-l', required=True, help='Locus of Interest.')
-    parser.add_argument('--outdir', '-o', required=True, help='Output directory (default .).')
+    parser.add_argument('--outname', '-o', required=True, help='Output name (default .).')
     return parser
 
 
